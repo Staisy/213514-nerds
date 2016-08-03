@@ -3,7 +3,7 @@
 * Студент: [Анастасия Корташова](https://up.htmlacademy.ru/htmlcss/14/user/213514).
 * Наставник: `Денис Верхотуров`.
 
- тестовое изменение 
+  
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
