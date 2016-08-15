@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 
-  </body>
-</html>
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="conteiner">
+      <div class="logo">
+        <img class="main-logo" src="http://placehold.it/139x56" alt="">
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Cтудия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a class="btn" href="#">Корзина</a>
+      </div>
+      <div class="slider">
+        <p class="current-slide"><b>Долго, дорого, скрупулезно.</b></p>
+        <p class="current-slide">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="btn" href="#">Узнать больше</a>
+        <img class="current-slide" src="http://placehold.it/338x231" alt="">
+        <!--буллеты пропишу в стилях, правда не знаю пока, каким образом-->
+      </div>
+    </div>
+  </header>
+  <main class="conteiner">
+    <div class="features">
+      <div class="features-item">
+        <img src="http://placehold.it/240x124" alt="">
+        <h2>Веб-сайты</h2>
+        <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+        <!--В этой фразе в макете пропущена запятая-->
+        <a class="btn" href="#">Заказать</a>
+      </div>
+      <div class="features-item">
+        <img src="http://placehold.it/240x124" alt="">
+        <h2>Приложения</h2>
+        <p>Покорите топ-10 приложений в AppStore Google и Play</p>
+        <a class="btn" href="#">Заказать</a>
+      </div>
+      <div class="features-item">
+        <img src="http://placehold.it/240x124" alt="">
+        <h2>Презентации</h2>
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+        <a class="btn" href="#">Заказать</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-title">
+        <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+      </div>
+      <div class="content-logo">
+        <img src="http://placehold.it/187x75" alt="">
+        <p>Since 2004</p>
+      </div>
+      <div class="content-left">
+        <h2>Выполняем заказы на разработку:</h2>
+        <p>Веб-сайтов любой сложности</p>
+        <p>Мобильных приложений для iOS и Android</p>
+        <p>Слайдшоу и видео для корпоративных презентаций</p>
+      </div>
+      <div class="content-right">
+        <h2>Как мы работаем:</h2>
+        <p>С самоотдачей 146%</p>
+        <p>Соблюдая сроки на 100%</p>
+        <p>По предоплате 50%</p>
+      </div>
+      <div class="members">
+        <img src="http://placehold.it/198x37" alt="">
+        <img src="http://placehold.it/199x68" alt="">
+        <img src="http://placehold.it/209x86" alt="">
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="footer-map">
+      <!--Карту я пропишу стилем, как фоновое изображение, как-то так:
+      .footer-map {background-image: url("http://placehold.it/1199x416.png");}-->
+      <div class="footer-contacts">
+        <h2>Nёrds design studio</h2>
+        <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn" href="#">Как нас найти?</a>
+      </div>
+      <div class="footer-sticker">
+        <!--Cтикер я пропишу стилем, как фоновое изображение, как-то так:
+        .footer-sticker {background-image: url("http://placehold.it/231x190.png");}-->
+        <img src="http://placehold.it/92x37" alt="">
+      </div>
+    </div>
+    <div class="footer-social">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      <p><b>Давайте дружить, это выгодно!</b></p>
+      <p>Cкидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>

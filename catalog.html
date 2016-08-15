@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="conteiner">
+      <img class="main-logo" src="http://placehold.it/139x56" alt="">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Cтудия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a class="btn" href="#">Корзина</a>
+      </div>
+      <h1>Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+  </header>
+  <main class="conteiner">
+    <div class="catalog-filters">
+      <form class="search" action="selection" method="get">
+        <fieldset class="catalog-prices">
+          <legend>Стоимость</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div style="margin-left:50px;width:200px" class="bar">
+              </div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+          <div class="price-controls">
+            от
+            <input class="min-price" type="text" value="0"> до
+            <input class="max-price" type="text" value="15000">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <div class="grid">
+            <input type="text" id="adaptive" name="adaptive">
+            <label for="adaptive">Адаптивная</label>
+          </div>
+          <div class="grid">
+            <input type="text" id="fixed" name="fixed">
+            <label for="fixed">Фиксированная</label>
+          </div>
+          <div class="grid">
+            <input type="text" id="flexible" name="flexible">
+            <label for="flexible">Резиновая</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <div class="features">
+            <input type="text" id="slider" name="slider">
+            <label for="slider">Слайдер</label>
+          </div>
+          <div class="features">
+            <input type="text" id="beauties-block" name="beauties-block">
+            <label for="beauties-block">Блок преимуществ</label>
+          </div>
+          <div class="features">
+            <input type="text" id="news" name="news">
+            <label for="news">Новости</label>
+          </div>
+          <div class="features">
+            <input type="text" id="gallery" name="gallery">
+            <label for="gallery">Галерея</label>
+          </div>
+          <div class="features">
+            <input type="text" id="cart" name="cart">
+            <label for="cart">Корзина</label>
+          </div>
+        </fieldset>
+        <input type="submit" value="Показать">
+      </form>
+      <div class="catalog-items">
+        <h2>Сортировать:</h2>
+        <nav class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По функционалу</a>
+            </li>
+          </ul>
+          <!--стрелочки прописать в CSS-->
+        </nav>
+        <a class="item" href="#">
+          <img src="http://placehold.it/240x240" alt="">
+        </a>
+        <a class="item" href="#">
+          <img src="http://placehold.it/240x240" alt="">
+        </a>
+        <a class="item" href="#">
+          <img src="http://placehold.it/240x240" alt="">
+        </a>
+        <a class="item" href="#">
+          <img src="http://placehold.it/240x240" alt="">
+        </a>
+        <a class="item" href="#">
+          <img src="http://placehold.it/240x240" alt="">
+        </a>
+        <a class="item" href="#">
+          <img src="http://placehold.it/240x240" alt="">
+        </a>
+      </div>
+      <div class="paginator">
+        <a href="#1">1</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+        <a href="#4">Следующая</a>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="footer-map">
+      <!--Карту я пропишу стилем, как фоновое изображение, как-то так:
+      .footer-map {background-image: url("http://placehold.it/1199x416.png");}-->
+      <div class="footer-contacts">
+        <h2>Nёrds design studio</h2>
+        <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn" href="#">Как нас найти?</a>
+      </div>
+      <div class="footer-sticker">
+        <!--Cтикер я пропишу стилем, как фоновое изображение, как-то так:
+        .footer-sticker {background-image: url("http://placehold.it/231x190.png");}-->
+        <img src="http://placehold.it/92x37" alt="">
+      </div>
+    </div>
+    <div class="footer-social">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      <p><b>Давайте дружить, это выгодно!</b></p>
+      <p>Cкидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>
