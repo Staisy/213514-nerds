@@ -2,7 +2,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local ("Roboto Regular"), local ("Roboto-Regular") @import url("https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic") format ("woff");
+  src: local ("Roboto Regular"), local ("Roboto-Regular") url("https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic") format ("woff");
 }
 body {
   font-family: "Roboto", "Arial", sans-serif;
