@@ -33,13 +33,24 @@
     </div>
   </header>
   <main class="conteiner">
-    <div class="catalog">
-      <div class="catalog-prices">
-        <h2>Стоимость</h2>
-        <div class="pointer"></div>
-        <p>от<span>0</span>до<span>15000</span></p>
-      </div>
-      <form class="search" action="selection" method="post">
+    <div class="catalog-filters">
+      <form class="search" action="selection" method="get">
+        <fieldset class="catalog-prices">
+          <legend>Стоимость</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div style="margin-left:50px;width:200px" class="bar">
+              </div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+          <div class="price-controls">
+            от
+            <input class="min-price" type="text" value="0"> до
+            <input class="max-price" type="text" value="15000">
+          </div>
+        </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
           <div class="grid">
@@ -101,12 +112,6 @@
         </a>
         <a class="item" href="#">
           <img src="http://placehold.it/240x240" alt="">
-          <!--при активной ссылке:
-          <div>
-            <h3>Sunset</h3>
-            <p>Интернет-магазин с личным кабинетом</p>
-            <span>10000 р.</span>
-          </div> -->
         </a>
         <a class="item" href="#">
           <img src="http://placehold.it/240x240" alt="">
