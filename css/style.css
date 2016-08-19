@@ -1,19 +1,160 @@
+html, body {
+  min-width: 1199px;
+  min-height: 1155px;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-bottom: 85px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.main-header {
+  /*это только для сетки*/
+  background-color: #f9f2a0;
+}
+.main-header {
+  margin-bottom: 80px;
+}
+.logo {
+  width: 140px;
+  margin: 0 10px;
+  /*height: 56px;*/
+  /*это только для сетки*/
+  min-height: 120px;
+  background-color: #f9f2a0;
+}
+.main-menu {
+  width: 610px;
+  margin: 0 10px;
+  /*это только для сетки*/
+  min-height: 120px;
+  background-color: #f9f2a0;
+}
+.cart {
+  /*это только для сетки*/
+  min-height: 120px background-color: #f9f2a0;
+  ;
+}
+.slider {
+  width: 880px;
+  /*это только для сетки*/
+  min-height: 400px;
+  background-color: #f9f2a0;
+}
+.features {
+  width: 880px;
+  height: 500px;
+  margin-bottom: 55px;
+  border-bottom: 2px solid #eeeeee;
+  /*это только для сетки*/
+  background-color: #f9f2a0;
+}
+.features-item {
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin-right: 80px;
+  margin-bottom: 60px;
+  /*это только для сетки*/
+  background-color: #f9f2a0;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.content {
+  width: 880px;
+  height: 415px;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 45px;
+  /*это только для сетки*/
+  background-color: #f9f2a0;
+}
+.content-left {
+  float: left;
+  width: 620px;
+  /*это только для сетки*/
+  min-height: 300px;
+  background-color: #f9f2a0;
+}
+.content-right {
+  float: right;
+  width: 250px;
+  /*это только для сетки*/
+  min-height: 300px;
+}
+.members {
+  width: 880px;
+  margin-bottom: border-bottom: 2px solid #eeeeee;
+  /*это только для сетки*/
+  min-height: 100px;
+  background-color: #f9f2a0;
+}
+.main-footer {
+  margin-top: 80px;
+  /*это только для сетки*/
+  min-height: 100px;
+}
+.footer-map {
+  min-height: 415px;
+  background-image: url("../img/map-footer.jpg") no-repeat 50%;
+}
+.footer-social {
+  width: 880px;
+  height: 215px;
+}
+
+/*======================================
+
+ Системное оформление - не изменять
+
+=======================================*/
+
 body {
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "Roboto", "Arial", sans-serif;
+  padding: 3px;
 }
-h2, legend {
-  font-size: 18px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "Roboto", "Arial", sans-serif;
+body> *, body> *> *, body> *> *> * {
+  position: relative;
 }
-h3 {
-  font-size: 16px;
-  color: #000000;
+body> *::before, body> *> *::before, body> *> *> *::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  padding: 2px 5px;
   font-weight: bold;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+body> *::before {
+  top: -3px;
+  left: -3px;
+}
+body> *> *::before {
+  top: -3px;
+  left: -3px;
+}
+body> *> *> *::before {
+  top: 0;
+  left: 0;
+}
+body> * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+body> *::before {
+  color: white;
+  background: green;
+}
+.main-header::before {
+  content: ".main-header";
 }
