@@ -29,25 +29,22 @@ main {
   margin: 0 10px;
   /*height: 56px;*/
   /*это только для сетки*/
-  min-height: 120px;
   background-color: #f9f2a0;
 }
 .main-menu {
   width: 610px;
   margin: 0 10px;
   /*это только для сетки*/
-  min-height: 120px;
   background-color: #f9f2a0;
 }
 .cart {
   /*это только для сетки*/
-  min-height: 120px background-color: #f9f2a0;
+  background-color: #f9f2a0;
   ;
 }
 .slider {
   width: 880px;
   /*это только для сетки*/
-  min-height: 400px;
   background-color: #f9f2a0;
 }
 .features {
@@ -76,27 +73,34 @@ main {
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 45px;
   /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: red;
 }
 .content-left {
   float: left;
   width: 620px;
   /*это только для сетки*/
-  min-height: 300px;
-  background-color: #f9f2a0;
+  background-color: yellow;
 }
 .content-right {
   float: right;
-  width: 250px;
+  width: 240px;
   /*это только для сетки*/
-  min-height: 300px;
+  background-color: green;
 }
 .members {
   width: 880px;
-  margin-bottom: border-bottom: 2px solid #eeeeee;
+  height: 90px;
+  border-bottom: 2px solid #eeeeee;
   /*это только для сетки*/
-  min-height: 100px;
   background-color: #f9f2a0;
+}
+.members img {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+.members img:last-child {
+  margin-right: 0;
 }
 .main-footer {
   margin-top: 80px;
