@@ -26,35 +26,31 @@ main {
   float: left;
   width: 140px;
   margin: 0 10px;
-  /*height: 56px;*/
-  /*это только для сетки*/
-  background-color: #f9f2a0;
+  /*height: 56px*/
 }
 .main-menu {
   float: left;
   width: 610px;
   margin: 0 10px;
-  /*это только для сетки*/
-  background-color: #f9f2a0;
 }
-.main-menu ul {}
 .main-menu li {
   display: inline;
 }
 .cart {
   float: right;
-  /*это только для сетки*/
-  background-color: #f9f2a0;
-  ;
 }
-.slider {
+.promo {
   width: 880px;
-  /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: #eeeeee;
 }
-.main-header h1 {
-  width: 700px;
+h1 {
+  width: 880;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 40px;
   text-align: center;
+  background-color: #eeeeee;
 }
 .features {
   width: 880px;
@@ -62,7 +58,7 @@ main {
   margin-bottom: 55px;
   border-bottom: 2px solid #eeeeee;
   /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: #b4d9ab;
 }
 .features-item {
   float: left;
@@ -71,7 +67,7 @@ main {
   margin-right: 80px;
   margin-bottom: 60px;
   /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: #b4d9ab;
 }
 .features-item:last-child {
   margin-right: 0;
@@ -82,19 +78,19 @@ main {
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 45px;
   /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: #b4d9ab;
 }
 .content-left {
   float: left;
   width: 620px;
   /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: #b4d9ab;
 }
 .content-right {
   float: right;
   width: 240px;
   /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: #b4d9ab;
 }
 .members {
   width: 880px;
@@ -102,14 +98,14 @@ main {
   margin-bottom: 5px;
   border-bottom: 2px solid #eeeeee;
   /*это только для сетки*/
-  background-color: #f9f2a0;
+  background-color: #b4d9ab;
 }
 .members img {
   float: left;
   width: 240px;
   margin-right: 80px;
   /*только для сетки*/
-  background: #ccf9a0;
+  background: #b4d9ab;
 }
 .members img:last-child {
   margin-right: 0;
@@ -117,7 +113,6 @@ main {
 .catalog-filters {
   float: left;
   width: 240px;
-  margin-left: 10px;
   /*только для сетки*/
   background: #eef7f7;
 }
@@ -141,19 +136,17 @@ main {
   float: right;
   width: 560px;
   min-height: 1100px;
+  margin-left: 80px;
   /*только для сетки*/
   background: #eef7f7;
 }
 .breadcrumbs {
   width: 480px;
   /*только для сетки*/
-  background: #ccf9a0;
+  background: #eef7f7;
 }
 .breadcrumbs h2 {
   width: 100px;
-}
-.breadcrumbs ul {
-  width: 380px;
 }
 .breadcrumbs li {
   display: inline-block;
