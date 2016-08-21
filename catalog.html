@@ -3,20 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <style>
     body {
-      font-family: "Roboto", "Arial", sans-serif;
+      font-family: "Roboto", sans-serif;
     }
   </style>
+
   <title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
   <header class="main-header">
-    <div class="conteiner">
-      <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип">
-      <nav class="main-navigation">
+    <div class="container clearfix">
+      <a class="main-logo" href="#">
+        <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип"></a>
+      <nav class="main-menu">
         <ul>
           <li>
             <a href="#">Cтудия</a>
@@ -35,15 +38,16 @@
       <div class="cart">
         <a class="btn" href="#">Корзина</a>
       </div>
-      <h1>Добро пожаловать в магазин готовых макетов</h1>
+      <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
     </div>
   </header>
-  <main class="conteiner">
-    <div class="catalog-filters">
+  <main class="container clearfix">
+
+    <section class="catalog-filters">
       <form class="search" action="selection" method="get">
-        <fieldset class="catalog-prices">
+        <fieldset class="prices-filter">
           <legend>Стоимость</legend>
-          <div class="range-controls">
+          <!--<div class="range-controls">
             <div class="scale">
               <div style="margin-left:50px;width:200px" class="bar">
               </div>
@@ -55,83 +59,85 @@
             от
             <input class="min-price" type="text" value="0"> до
             <input class="max-price" type="text" value="15000">
-          </div>
+          </div>-->
         </fieldset>
-        <fieldset>
+        <fieldset class="grid-filter">
           <legend>Сетка:</legend>
-          <div class="grid">
-            <input type="text" id="adaptive" name="adaptive">
+          <div class="grid-form">
+            <input type="radio" id="adaptive" name="grid" value="#">
             <label for="adaptive">Адаптивная</label>
           </div>
-          <div class="grid">
-            <input type="text" id="fixed" name="fixed">
+          <div class="grid-form">
+            <input type="radio" id="fixed" name="grid" value="#">
             <label for="fixed">Фиксированная</label>
           </div>
-          <div class="grid">
-            <input type="text" id="flexible" name="flexible">
+          <div class="grid-form">
+            <input type="radio" id="flexible" name="grid" value="#">
             <label for="flexible">Резиновая</label>
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="features-filter">
           <legend>Особенности:</legend>
-          <div class="features">
-            <input type="text" id="slider" name="slider">
+          <div class="feature-form">
+            <input type="checkbox" id="slider" name="slider">
             <label for="slider">Слайдер</label>
           </div>
-          <div class="features">
-            <input type="text" id="beauties-block" name="beauties-block">
+          <div class="feature-form">
+            <input type="checkbox" id="beauties-block" name="beauties-block">
             <label for="beauties-block">Блок преимуществ</label>
           </div>
-          <div class="features">
-            <input type="text" id="news" name="news">
+          <div class="feature-form">
+            <input type="checkbox" id="news" name="news">
             <label for="news">Новости</label>
           </div>
-          <div class="features">
-            <input type="text" id="gallery" name="gallery">
+          <div class="feature-form">
+            <input type="checkbox" id="gallery" name="gallery">
             <label for="gallery">Галерея</label>
           </div>
-          <div class="features">
-            <input type="text" id="cart" name="cart">
+          <div class="feature-form">
+            <input type="checkbox" id="cart" name="cart">
             <label for="cart">Корзина</label>
           </div>
         </fieldset>
-        <input type="submit" value="Показать">
+        <input class="btn" type="submit" value="Показать">
       </form>
-      <div class="catalog-items">
+    </section>
+    <section class="catalog-features">
+      <nav class="breadcrumbs">
         <h2>Сортировать:</h2>
-        <nav class="breadcrumbs">
-          <ul>
-            <li>
-              <a href="#">По цене</a>
-            </li>
-            <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По функционалу</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="arrows"></div>
-        <!--стрелочки прописать в CSS-->
-        <a class="item" href="#">
-          <img src="img/catalog-item1.jpg" width="240" height="240" alt="изображение продукта">
-        </a>
-        <a class="item" href="#">
-          <img src="img/catalog-item2.jpg" width="240" height="240" alt="изображение продукта">
-        </a>
-        <a class="item" href="#">
-          <img src="img/catalog-item3.jpg" width="240" height="240" alt="изображение продукта">
-        </a>
-        <a class="item" href="#">
-          <img src="img/catalog-item4.jpg" width="240" height="240" alt="изображение продукта">
-        </a>
-        <a class="item" href="#">
-          <img src="img/catalog-item5.jpg" width="239" height="240" alt="изображение продукта">
-        </a>
-        <a class="item" href="#">
-          <img src="img/catalog-item6.jpg" width="239" height="240" alt="изображение продукта">
-        </a>
+        <ul>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По функционалу</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="arrows"></div>
+      <!--стрелочки прописать в CSS position:absolute;
+      <div class="catalog-items">-->
+      <a class="item" href="#">
+        <img src="img/catalog-item1.jpg" width="240" height="240" alt="изображение продукта">
+      </a>
+      <a class="item" href="#">
+        <img src="img/catalog-item2.jpg" width="240" height="240" alt="изображение продукта">
+      </a>
+      <a class="item" href="#">
+        <img src="img/catalog-item3.jpg" width="240" height="240" alt="изображение продукта">
+      </a>
+      <a class="item" href="#">
+        <img src="img/catalog-item4.jpg" width="240" height="240" alt="изображение продукта">
+      </a>
+      <a class="item" href="#">
+        <img src="img/catalog-item5.jpg" width="239" height="240" alt="изображение продукта">
+      </a>
+      <a class="item" href="#">
+        <img src="img/catalog-item6.jpg" width="239" height="240" alt="изображение продукта">
+      </a>
       </div>
       <div class="paginator">
         <a href="#1">1</a>
@@ -139,30 +145,33 @@
         <a href="#3">3</a>
         <a href="#4">Следующая</a>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="main-footer">
-    <div class="footer-map">
-      <!--Карту я пропишу стилем, как фоновое изображение, как-то так:
+    <div class="container clearfix">
+      <section class="footer-map">
+        <!--Карту я пропишу стилем, как фоновое изображение, как-то так:
       .footer-map {background-image: url("http://placehold.it/1199x416.png");}-->
-      <div class="footer-contacts">
-        <h2>Nёrds design studio</h2>
-        <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn" href="#">Как нас найти?</a>
-      </div>
-      <div class="footer-marker">
-
-        <img src="img/map-marker.png" width="231" height="190" alt="маркер">
-        <img src="img/map-logo.png" width="92" height="37" alt="логотип">
-      </div>
+        <div class="footer-contacts">
+          <h2>Nёrds design studio</h2>
+          <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn" href="#">Как нас найти?</a>
+        </div>
+        <div class="footer-marker">
+          <img src="img/map-marker.png" width="231" height="190" alt="маркер">
+          <img src="img/map-logo.png" width="92" height="37" alt="логотип">
+        </div>
     </div>
-    <div class="footer-social">
+    </div>
+    </section>
+    <section class="footer-social">
       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
       <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
       <p><b>Давайте дружить, это выгодно!</b></p>
       <p>Cкидка 10% для друзей из социальных сетей.</p>
+    </section>
     </div>
   </footer>
 </body>
