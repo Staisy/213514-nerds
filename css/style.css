@@ -1,267 +1,386 @@
-                                            body {
-                                            min-width: 900px;
-                                            font-weight: 500;
-                                            font-size: 16px;
-                                            line-height: 22px;
-                                            font-family: "Roboto", "Arial", sans-serif;
-                                          }
-                                          .clearfix::after {
-                                            content: "";
-                                            display: table;
-                                            clear: both;
-                                          }
-                                          .container {
-                                            width: 880px;
-                                            margin: 0 auto;
-                                            padding: 0 10px;
-                                          }
-                                          .main-header {
-                                            color: #000000;
-                                            background-color: #eeeeee;
-                                          }
-                                          .main-logo {
-                                            float: left;
-                                            width: 140px;
-                                            margin: 0 10px;
-                                            margin-top: 26px;
-                                          }
-                                          .main-menu {
-                                            float: left;
-                                            width: 610px;
-                                            margin: 0 10px;
-                                          }
-                                          .main-menu ul {
-                                            margin: 0;
-                                            padding: 0;
-                                            list-style: none;
-                                            font-size: 0;
-                                          }
-                                          .main-menu li {
-                                            display: inline-block;
-                                            text-align: top;
-                                            font-size: 14px;
-                                            line-height: 30px;
-                                          }
-                                          .main-menu a {
-                                            display: block;
-                                            padding-top: 60px;
-                                            padding-left: 45px;
-                                            padding-bottom: 55px;
-                                            color: #000000;
-                                            text-decoration: none;
-                                          }
-                                          .main-menu a:hover {
-                                            color: #fb565a;
-                                          }
-                                          .cart {
-                                            float: right;
-                                            max-width: 130px;
-                                            .cart .btn {
-                                              font-size: 14px;
-                                              line-height: 30px;
-                                              color: #000000;
-                                              text-decoration: none;
-                                            }
-                                          }
-                                          main {
-                                            margin-bottom: 80px;
-                                            min-height: 1100px;
-                                            .promo {
-                                              width: 880px;
-                                              background-color: #eeeeee;
-                                            }
-                                            h1 {
-                                              width: 880;
-                                              padding-left: 100px;
-                                              padding-right: 100px;
-                                              font-family: "Roboto", "Arial", sans-serif;
-                                              font-size: 40px;
-                                              text-align: center;
-                                              background-color: #eeeeee;
-                                            }
-                                            .features {
-                                              width: 880px;
-                                              height: 500px;
-                                              margin-bottom: 55px;
-                                              border-bottom: 2px solid #eeeeee;
-                                              /*это только для сетки*/
-                                              background-color: #b4d9ab;
-                                            }
-                                            .features-item {
-                                              float: left;
-                                              width: 240px;
-                                              height: 300px;
-                                              margin-right: 80px;
-                                              margin-bottom: 60px;
-                                              /*это только для сетки*/
-                                              background-color: #b4d9ab;
-                                            }
-                                            .features-item:last-child {
-                                              margin-right: 0;
-                                            }
-                                            .content {
-                                              width: 880px;
-                                              height: 415px;
-                                              border-bottom: 2px solid #eeeeee;
-                                              margin-bottom: 45px;
-                                              /*это только для сетки*/
-                                              background-color: #b4d9ab;
-                                            }
-                                            .content-left {
-                                              float: left;
-                                              width: 620px;
-                                              /*это только для сетки*/
-                                              background-color: #b4d9ab;
-                                            }
-                                            .content-right {
-                                              float: right;
-                                              width: 240px;
-                                              /*это только для сетки*/
-                                              background-color: #b4d9ab;
-                                            }
-                                            .members {
-                                              width: 880px;
-                                              height: 90px;
-                                              margin-bottom: 5px;
-                                              border-bottom: 2px solid #eeeeee;
-                                              /*это только для сетки*/
-                                              background-color: #b4d9ab;
-                                            }
-                                            .members img {
-                                              float: left;
-                                              width: 240px;
-                                              margin-right: 80px;
-                                              /*только для сетки*/
-                                              background: #b4d9ab;
-                                            }
-                                            .members img:last-child {
-                                              margin-right: 0;
-                                            }
-                                            .catalog-filters {
-                                              float: left;
-                                              width: 240px;
-                                              /*только для сетки*/
-                                              background: #eef7f7;
-                                            }
-                                            .prices-filter {
-                                              width: 240px;
-                                              height: 170px;
-                                              border: none;
-                                            }
-                                            .grid-filter {
-                                              width: 240px;
-                                              height: 145px;
-                                              border: none;
-                                            }
-                                            .features-filter {
-                                              width: 240px;
-                                              height: 225px;
-                                              border: none;
-                                            }
-                                            .search btn {
-                                              width: 150px;
-                                              height: 40px;
-                                            }
-                                            .catalog-features {
-                                              float: right;
-                                              width: 560px;
-                                              min-height: 1100px;
-                                              margin-left: 80px;
-                                              /*только для сетки*/
-                                              background: #eef7f7;
-                                            }
-                                            .breadcrumbs {
-                                              width: 480px;
-                                              /*только для сетки*/
-                                              background: #eef7f7;
-                                            }
-                                            .breadcrumbs h2 {
-                                              width: 100px;
-                                            }
-                                            .breadcrumbs li {
-                                              display: inline-block;
-                                            }
-                                            .catalog-items {
-                                              width: 560px;
-                                              margin-left: 80px;
-                                              /*только для сетки*/
-                                              background: #ccf9a0;
-                                            }
-                                            .catalog-items a {
-                                              display: inline-block;
-                                            }
-                                            .paginator {
-                                              width: 300px;
-                                              /*только для сетки*/
-                                              background: #ccf9a0;
-                                            }
-                                            .main-footer {
-                                              margin-top: 80px;
-                                              /*это только для сетки*/
-                                              min-height: 100px;
-                                              background-color: #b4d9ab;
-                                            }
-                                            .footer-map {
-                                              min-height: 415px;
-                                              background-image: url("../img/map-footer.jpg") no-repeat 50%;
-                                            }
-                                            .footer-social {
-                                              width: 880px;
-                                              height: 215px;
-                                            }
-                                            /*иконки*/
-                                            .sprite {
-                                              background-image: url(spritesheet.png);
-                                              background-repeat: no-repeat;
-                                              display: block;
-                                            }
-                                            .sprite-ico-basket {
-                                              width: 15px;
-                                              height: 15px;
-                                              background-position: -10px -10px;
-                                            }
-                                            .sprite-ico-vk {
-                                              width: 26px;
-                                              height: 15px;
-                                              background-position: -10px -284px;
-                                            }
-                                            .sprite-ico-facebook {
-                                              width: 12px;
-                                              height: 22px;
-                                              background-position: -10px -131px;
-                                            }
-                                            .sprite-ico-instagramm {
-                                              width: 21px;
-                                              height: 21px;
-                                              background-position: -10px -173px;
-                                            }
-                                            .sprite-ico-radio {
-                                              width: 25px;
-                                              height: 25px;
-                                              background-position: -5px -209px;
-                                            }
-                                            .sprite-ico-radio-dot {
-                                              width: 25px;
-                                              height: 25px;
-                                              background-position: -5px -244px;
-                                            }
-                                            .sprite-ico-checkbox-active {
-                                              width: 27px;
-                                              height: 23px;
-                                              background-position: -5px -40px;
-                                            }
-                                            .sprite-ico-checkbox-off {
-                                              width: 23px;
-                                              height: 23px;
-                                              background-position: -5px -73px;
-                                            }
-                                            .sprite-ico-down-arrow-active {
-                                              width: 11px;
-                                              height: 10px;
-                                              background-position: -5px -106px;
-                                            }
-                                            .sprite-icon-up-arrow {
-                                              width: 11px;
-                                              height: 10px;
-                                              background-position: -5px -314px;
-                                            }
+body {
+  min-width: 900px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header {
+  color: #000000;
+  background-color: #eeeeee;
+}
+.main-menu {
+  float: left;
+  width: 770px;
+  /*это только для сетки*/
+  background-color: yellow;
+}
+.main-logo {
+  float: left;
+  width: 140px;
+  margin-top: 10px;
+  margin-right: 10px;
+  ;
+  /*это только для сетки*/
+  background-color: red;
+}
+.main-menu ul {
+  padding: 0;
+  margin-left: 280px;
+  list-style: none;
+  font-size: 0;
+  /*это только для сетки*/
+  background-color: green;
+}
+.main-menu li {
+  display: inline-block;
+  text-align: top;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.main-menu a {
+  display: block;
+  padding: 40px 0 35px 45px;
+  color: #000000;
+  text-decoration: none;
+}
+.main-menu a:hover {
+  color: #fb565a;
+}
+.cart {
+  float: right;
+  max-width: 115px;
+}
+.cart .btn {
+  position: relative;
+  display: inline-block;
+  padding: 40px 0 35px 40px;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+  color: #000000;
+  text-decoration: none;
+  /*это только для сетки*/
+  background-color: #b4d9ab;
+}
+.cart .btn:hover {
+  color: #fb565a;
+}
+.cart .btn::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -10px;
+  opacity: 0.3;
+}
+.cart .btn:hover::before {
+  color: #fb565a;
+}
+main {
+  margin-bottom: 80px;
+  min-height: 1100px;
+}
+.promo {
+  padding-top: 0;
+  background: #eeeeee;
+}
+.slider {
+  position: relative;
+  width: 880px;
+  margin: 0 auto;
+}
+.slide {
+  min-height: 330px;
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+.slider input[type="radio"] {
+  display: none;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 60px;
+  margin-left: -30px;
+  text-align: center;
+}
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  vertical-align: top;
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slide-text {
+  width: 500px;
+  padding: 30px 0;
+}
+.slide-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+}
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+.slide .btn {
+  display: block;
+  width: 240px;
+  margin-top: 30px;
+  padding: 10px 10px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
+}
+.slide:nth-child(1) {
+  background-image: url("../img/slide1.png");
+}
+.slide:nth-child(2) {
+  background-image: url("../img/slide2.png");
+}
+.slide:nth-child(3) {
+  background-image: url("../img/slide3.png");
+}
+.slide {
+  display: none;
+}
+#btn-1:checked~ .slides .slide:nth-child(1) {
+  display: block;
+}
+#btn-2:checked~ .slides .slide:nth-child(2) {
+  display: block;
+}
+#btn-3:checked~ .slides .slide:nth-child(3) {
+  display: block;
+}
+#btn-1:checked~ .slider-controls label[for="btn-1"], #btn-2:checked~ .slider-controls label[for="btn-2"], #btn-3:checked~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
+}
+h1 {
+  width: 880px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.features {
+  width: 880px;
+  height: 500px;
+  margin-bottom: 55px;
+  border-bottom: 2px solid #eeeeee;
+  /*это только для сетки*/
+  background-color: #b4d9ab;
+}
+.features-item {
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin-right: 80px;
+  margin-bottom: 60px;
+  /*это только для сетки*/
+  background-color: #b4d9ab;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.content {
+  width: 880px;
+  height: 415px;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 45px;
+  /*это только для сетки*/
+  background-color: #b4d9ab;
+}
+.content-left {
+  float: left;
+  width: 620px;
+  /*это только для сетки*/
+  background-color: #b4d9ab;
+}
+.content-right {
+  float: right;
+  width: 240px;
+  /*это только для сетки*/
+  background-color: #b4d9ab;
+}
+.members {
+  width: 880px;
+  height: 90px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #eeeeee;
+  /*это только для сетки*/
+  background-color: #b4d9ab;
+}
+.members img {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+  /*только для сетки*/
+  background: #b4d9ab;
+}
+.members img:last-child {
+  margin-right: 0;
+}
+.catalog-filters {
+  float: left;
+  width: 240px;
+  /*только для сетки*/
+  background: #eef7f7;
+}
+.prices-filter {
+  width: 240px;
+  height: 170px;
+  border: none;
+}
+.grid-filter {
+  width: 240px;
+  height: 145px;
+  border: none;
+}
+.features-filter {
+  width: 240px;
+  height: 225px;
+  border: none;
+}
+.search .btn {
+  width: 150px;
+  height: 40px;
+}
+.catalog-features {
+  float: right;
+  width: 560px;
+  min-height: 1100px;
+  margin-left: 80px;
+  /*только для сетки*/
+  background: #eef7f7;
+}
+.breadcrumbs {
+  width: 480px;
+  /*только для сетки*/
+  background: #eef7f7;
+}
+.breadcrumbs h2 {
+  width: 100px;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.catalog-items {
+  width: 560px;
+  margin-left: 80px;
+  /*только для сетки*/
+  background: #ccf9a0;
+}
+.catalog-items a {
+  display: inline-block;
+}
+.paginator {
+  width: 300px;
+  /*только для сетки*/
+  background: #ccf9a0;
+}
+.main-footer {
+  margin-top: 80px;
+  /*это только для сетки*/
+  min-height: 100px;
+  background-color: #b4d9ab;
+}
+.footer-map {
+  min-height: 415px;
+  background: url("../img/map-footer.jpg");
+  no-repeat 50%;
+}
+.footer-social {
+  width: 880px;
+  height: 215px;
+}
+
+/*иконки*/
+
+.sprite {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite-ico-basket {
+  width: 15px;
+  height: 15px;
+  background-position: -10px -10px;
+}
+.sprite-ico-vk {
+  width: 26px;
+  height: 15px;
+  background-position: -10px -284px;
+}
+.sprite-ico-facebook {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -131px;
+}
+.sprite-ico-instagramm {
+  width: 21px;
+  height: 21px;
+  background-position: -10px -173px;
+}
+.sprite-ico-radio {
+  width: 25px;
+  height: 25px;
+  background-position: -5px -209px;
+}
+.sprite-ico-radio-dot {
+  width: 25px;
+  height: 25px;
+  background-position: -5px -244px;
+}
+.sprite-ico-checkbox-active {
+  width: 27px;
+  height: 23px;
+  background-position: -5px -40px;
+}
+.sprite-ico-checkbox-off {
+  width: 23px;
+  height: 23px;
+  background-position: -5px -73px;
+}
+.sprite-ico-down-arrow-active {
+  width: 11px;
+  height: 10px;
+  background-position: -5px -106px;
+}
+.sprite-icon-up-arrow {
+  width: 11px;
+  height: 10px;
+  background-position: -5px -314px;
+}
+
+}

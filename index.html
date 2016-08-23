@@ -19,10 +19,10 @@
 
   <header class="main-header">
     <div class="container clearfix">
-      <div class="main-logo">
-        <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип">
-      </div>
       <nav class="main-menu">
+        <div class="main-logo">
+          <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип">
+        </div>
         <ul>
           <li>
             <a href="#">CТУДИЯ</a>
@@ -36,6 +36,7 @@
           <li>
             <a href="#">КОНТАКТЫ</a>
           </li>
+
         </ul>
       </nav>
       <div class="cart">
@@ -44,15 +45,59 @@
     </div>
   </header>
   <main class="container">
-    <div class="promo">
-      <!--class="slider", если включу остальные две картинки-->
+    <!--class="slider", если включу остальные две картинки
       <p class="slogan"><b>Долго, дорого, скрупулезно.</b></p>
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
       <a class="btn" href="#">Узнать больше</a>
       <img class="current-slide" src="img/main-slider.png" width="338" height="231" alt="гаджеты">
       <div class="bullets"></div>
-      <!--буллеты пропишу в стилях, правда не знаю пока, каким образом-->
-    </div>
+    -->
+    <section class="promo clearfix">
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого,
+                <br>скрупулезно.
+              </div>
+              <p>Математически выверенный дизайн
+                <br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику,
+                <br>как любим ее мы?
+              </div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные
+                <br>за креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,
+                <br>только хардкор!
+              </div>
+              <p>Все дизайнерские решения в нашей компании принимаются
+                <br>только под воздействием качественных галлюциногенов</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="features clearfix">
       <div class="features-item">
         <img src="img/features-websites.jpg" width="240" height="124" alt="вебсайты">
