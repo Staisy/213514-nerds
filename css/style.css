@@ -5,6 +5,7 @@ body {
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
+  text-transform: uppercase;
 }
 .clearfix::after {
   content: "";
@@ -99,6 +100,7 @@ main {
 .promo {
   padding-top: 0;
   background: #eeeeee;
+  text-transform: none;
 }
 .slider {
   position: relative;
@@ -195,43 +197,177 @@ h1 {
 }
 .features {
   width: 880px;
-  height: 500px;
-  margin-bottom: 55px;
   border-bottom: 2px solid #eeeeee;
-  /*это только для сетки*/
-  background-color: #b4d9ab;
+  background-color: #ffffff;
 }
 .features-item {
   float: left;
   width: 240px;
-  height: 300px;
+  height: 380px;
   margin-right: 80px;
-  margin-bottom: 60px;
-  /*это только для сетки*/
-  background-color: #b4d9ab;
+  margin-top: 80px;
 }
 .features-item:last-child {
   margin-right: 0;
 }
+.features-item h2 {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.features-item p {
+  height: 65px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: none;
+  color: #283136;
+}
+.features-item .btn {
+  display: block;
+  width: 140px;
+  margin-top: 30px;
+  padding: 10px 10px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.features-item:nth-child(1) .btn {
+  background: #fb565a;
+}
+.features-item:nth-child(2) .btn {
+  background: #00ca74;
+}
+.features-item:nth-child(3) .btn {
+  background: #efc84a;
+}
 .content {
   width: 880px;
-  height: 415px;
-  border-bottom: 2px solid #eeeeee;
+  min-height: 475px;
+  margin: 0;
   margin-bottom: 45px;
-  /*это только для сетки*/
-  background-color: #b4d9ab;
+  border-bottom: 2px solid #eeeeee;
+  /*это только для сетки
+  background-color: #b4d9ab;*/
+}
+.content h3 {
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  /*only for the grid
+  background-color: grey;*/
+}
+.content ul {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+  text-transform: none;
+  /*only for grid
+  background-color: green;*/
+}
+.content li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+.content li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 .content-left {
   float: left;
-  width: 620px;
-  /*это только для сетки*/
-  background-color: #b4d9ab;
+  width: 580px;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  /*это только для сетки
+  background-color: yellow;*/
+}
+.content-text {
+  width: 580px;
+  padding-top: 73px;
+}
+.content-text b {
+  display: block;
+  margin-bottom: 15px;
+  padding-right: 35px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  /*only for grid
+  background-color: grey;*/
+}
+.content-text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-transform: none;
+  /*only for grid
+  background-color: grey;*/
 }
 .content-right {
   float: right;
   width: 240px;
-  /*это только для сетки*/
-  background-color: #b4d9ab;
+  margin: 0;
+  padding: 0;
+  /*это только для сетки
+  background-color: yellow;*/
+}
+.content-promo {
+  width: 240px;
+  padding-top: 72px;
+}
+.content-promo img {
+  display: block;
+  width: 187px;
+  height: 75px;
+  margin-left: 20px;
+  margin-right: 30px;
+  /*only for grid
+  background-color: grey;*/
+}
+.content-promo b {
+  position: relative;
+  display: block;
+  height: 20px;
+  margin-top: 29px;
+  margin-bottom: 63px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.content-promo b::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 65px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+.content-promo b::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 65px;
+  height: 2px;
+  background-color: #eeeeee;
 }
 .members {
   width: 880px;
