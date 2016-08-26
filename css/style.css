@@ -94,7 +94,6 @@ body {
   color: #fb565a;
 }
 main {
-  margin-bottom: 85px;
   min-height: 1100px;
 }
 .promo {
@@ -185,15 +184,6 @@ main {
 }
 #btn-1:checked~ .slider-controls label[for="btn-1"], #btn-2:checked~ .slider-controls label[for="btn-2"], #btn-3:checked~ .slider-controls label[for="btn-3"] {
   background: #c1c1c1;
-}
-h1 {
-  width: 880px;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 40px;
-  text-align: center;
-  background-color: #eeeeee;
 }
 .features {
   width: 880px;
@@ -390,6 +380,80 @@ h1 {
   margin-top: 45px;
   margin-right: 0;
 }
+.main-footer {
+  margin-top: 85px;
+  /*это только для сетки
+  min-height: 100px;
+  background-color: #b4d9ab;*/
+}
+.footer-map {
+  position: relative;
+  min-width: 880px;
+  min-height: 415px;
+  padding-top: 88px;
+  padding-left: 10px;
+  background: url("../img/footer-map.jpg") no-repeat center top;
+  no-repeat 50%;
+}
+.footer-contacts {
+  width: 250px;
+  height: 240px;
+  background: #ffffff;
+}
+.footer-marker {
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  top: 112px;
+  right: -30px;
+}
+.footer-social {
+  width: 880px;
+  height: 215px;
+  background-color: #ffffff;
+}
+.social-btn {
+  float: left;
+  display: block;
+  width: 63px;
+  height: 63px;
+  margin: 0 4px;
+  font-size: 0;
+  text-decoration: 0;
+  background: url("../img/sprite.png") no-repeat center;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.social-btn-vk {
+  background-position: -10px -284px;
+}
+.footer-social p {
+  float: right;
+  width: 550px;
+  margin: 0;
+  margin-bottom: 73px;
+  color: #283136;
+  text-transform: none;
+  background-color: yellow;
+}
+.footer-social b {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+/*inner-pages*/
+
+h1 {
+  width: 880px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  background-color: #eeeeee;
+}
 .catalog-filters {
   float: left;
   width: 240px;
@@ -447,21 +511,6 @@ h1 {
   width: 300px;
   /*только для сетки*/
   background: #ccf9a0;
-}
-.main-footer {
-  margin-top: 80px;
-  /*это только для сетки*/
-  min-height: 100px;
-  background-color: #b4d9ab;
-}
-.footer-map {
-  min-height: 415px;
-  background: url("../img/map-footer.jpg");
-  no-repeat 50%;
-}
-.footer-social {
-  width: 880px;
-  height: 215px;
 }
 
 /*иконки*/
