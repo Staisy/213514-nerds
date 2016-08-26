@@ -32,7 +32,6 @@ body {
   width: 140px;
   margin-top: 10px;
   margin-right: 10px;
-  ;
   /*это только для сетки
   background-color: red;*/
 }
@@ -87,10 +86,10 @@ body {
   width: 15px;
   height: 15px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -10px;
+  background-position: -25px -145px;
   opacity: 0.3;
 }
-.cart .btn:hover::before {
+.cart .btn::before:hover {
   color: #fb565a;
 }
 main {
@@ -415,17 +414,40 @@ main {
 .social-btn {
   float: left;
   display: block;
+  position: relative;
   width: 63px;
   height: 63px;
   margin: 0 4px;
   font-size: 0;
   text-decoration: 0;
-  background: url("../img/sprite.png") no-repeat center;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: #e1e1e1;
 }
-.social-btn-vk {
-  background-position: -10px -284px;
+.social-btn:hover {
+  background-color: #fb565a;
+}
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/sprite.png") no-repeat;
+}
+.social-btn-vk::before {
+  width: 26px;
+  height: 15px;
+  background-position: -25px -649px;
+}
+.social-btn-fb::before {
+  width: 12px;
+  height: 22px;
+  background-position: -25px -506px;
+}
+.social-btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -25px -578px;
 }
 .footer-social p {
   float: right;
@@ -434,7 +456,6 @@ main {
   margin-bottom: 73px;
   color: #283136;
   text-transform: none;
-  background-color: yellow;
 }
 .footer-social b {
   font-weight: 500;
@@ -520,55 +541,53 @@ h1 {
   background-repeat: no-repeat;
   display: block;
 }
+.sprite-ico-arrow-down {
+  width: 11px;
+  height: 10px;
+  background-position: -25px -25px;
+}
+.sprite-ico-arrow-up {
+  width: 11px;
+  height: 10px;
+  background-position: -25px -85px;
+}
 .sprite-ico-basket {
   width: 15px;
   height: 15px;
-  background-position: -10px -10px;
-}
-.sprite-ico-vk {
-  width: 26px;
-  height: 15px;
-  background-position: -10px -284px;
-}
-.sprite-ico-facebook {
-  width: 12px;
-  height: 22px;
-  background-position: -10px -131px;
-}
-.sprite-ico-instagramm {
-  width: 21px;
-  height: 21px;
-  background-position: -10px -173px;
-}
-.sprite-ico-radio {
-  width: 25px;
-  height: 25px;
-  background-position: -5px -209px;
-}
-.sprite-ico-radio-dot {
-  width: 25px;
-  height: 25px;
-  background-position: -5px -244px;
+  background-position: -25px -145px;
 }
 .sprite-ico-checkbox-active {
   width: 27px;
   height: 23px;
-  background-position: -5px -40px;
+  background-position: -25px -210px;
 }
 .sprite-ico-checkbox-off {
   width: 23px;
   height: 23px;
-  background-position: -5px -73px;
+  background-position: -25px -283px;
 }
-.sprite-ico-down-arrow-active {
-  width: 11px;
-  height: 10px;
-  background-position: -5px -106px;
+.sprite-ico-radio {
+  width: 25px;
+  height: 25px;
+  background-position: -25px -356px;
 }
-.sprite-icon-up-arrow {
-  width: 11px;
-  height: 10px;
-  background-position: -5px -314px;
+.sprite-ico-radio-dot {
+  width: 25px;
+  height: 25px;
+  background-position: -25px -431px;
 }
-
+.sprite-ico-social-fb {
+  width: 12px;
+  height: 22px;
+  background-position: -25px -506px;
+}
+.sprite-ico-social-instagramm {
+  width: 21px;
+  height: 21px;
+  background-position: -25px -578px;
+}
+.sprite-ico-social-vk {
+  width: 26px;
+  height: 15px;
+  background-position: -25px -649px;
 }
