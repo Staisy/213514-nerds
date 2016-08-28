@@ -50,65 +50,56 @@
       <form class="search" action="selection" method="get">
         <fieldset class="prices-filter">
           <legend>Стоимость</legend>
-          <!--<div class="range-controls">
+          <div class="range-controls">
             <div class="scale">
-              <div style="margin-left:50px;width:200px" class="bar">
+              <div style="width:70%" class="bar">
               </div>
             </div>
             <div class="toggle min-toggle"></div>
             <div class="toggle max-toggle"></div>
           </div>
           <div class="price-controls">
-            от
-            <input class="min-price" type="text" value="0"> до
-            <input class="max-price" type="text" value="15000">
-          </div>-->
+            ОТ
+            <input name="min-price" class="min-price" type="text" value="0"> ДО
+            <input name="max-price" class="max-price" type="text" value="15000">
+          </div>
         </fieldset>
         <fieldset class="grid-filter">
           <legend>Сетка:</legend>
-          <div class="grid-form">
-            <input type="radio" id="adaptive" name="grid" value="#">
-            <label for="adaptive">Адаптивная</label>
-          </div>
-          <div class="grid-form">
-            <input type="radio" id="fixed" name="grid" value="#">
-            <label for="fixed">Фиксированная</label>
-          </div>
-          <div class="grid-form">
-            <input type="radio" id="flexible" name="grid" value="#">
-            <label for="flexible">Резиновая</label>
-          </div>
+
+          <input type="radio" id="adaptive" name="grid" value="#">
+          <label for="adaptive">Адаптивная</label>
+
+
+          <input type="radio" id="fixed" name="grid" value="#">
+          <label for="fixed">Фиксированная</label>
+
+
+          <input type="radio" id="flexible" name="grid" value="#">
+          <label for="flexible">Резиновая</label>
+
         </fieldset>
         <fieldset class="features-filter">
           <legend>Особенности:</legend>
-          <div class="feature-form">
-            <input type="checkbox" id="slider" name="slider">
-            <label for="slider">Слайдер</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="beauties-block" name="beauties-block">
-            <label for="beauties-block">Блок преимуществ</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="news" name="news">
-            <label for="news">Новости</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="gallery" name="gallery">
-            <label for="gallery">Галерея</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="cart" name="cart">
-            <label for="cart">Корзина</label>
-          </div>
+          <input type="checkbox" id="slider" name="slider">
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" id="beauties-block" name="beauties-block">
+          <label for="beauties-block">Блок преимуществ</label>
+          <input type="checkbox" id="news" name="news">
+          <label for="news">Новости</label>
+          <input type="checkbox" id="gallery" name="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" id="cart" name="cart">
+          <label for="cart">Корзина</label>
         </fieldset>
         <input class="btn" type="submit" value="Показать">
       </form>
     </section>
-    <section class="catalog-features">
-      <div>
-        <div class="sort">
-          <span>Сортировать:</span>
+
+    <section class="catalog-items">
+      <div class="sort">
+        <span>Сортировать:</span>
+        <div class="sort-names">
           <ul>
             <li>
               <a href="#">По цене</a>
@@ -120,29 +111,30 @@
               <a href="#">По функционалу</a>
             </li>
           </ul>
+
+          <div class="arrows"></div>
         </div>
-        <div class="arrows"></div>
-        <!--стрелочки прописать в CSS position:absolute;
-      <div class="catalog-items">-->
       </div>
-      <a class="item" href="#">
-        <img src="img/catalog-item1.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item2.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item3.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item4.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item5.jpg" width="239" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item6.jpg" width="239" height="240" alt="изображение продукта">
-      </a>
+
+      <div class="items">
+        <a class="item" href="#">
+          <img src="img/catalog-item1.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item2.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item3.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item4.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item5.jpg" width="239" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item6.jpg" width="239" height="240" alt="изображение продукта">
+        </a>
       </div>
       <div class="paginator">
         <a href="#1">1</a>
@@ -158,9 +150,8 @@
 
         <div class="footer-contacts">
           <h2>Nёrds design studio</h2>
-          <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">Как нас найти?</a>
+          <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p> <span>тел.+7(812)275-75-75</span>
+          <a class="btn" href="#">Напишите нам</a>
         </div>
         <div class="footer-marker">
           <img src="img/footer-map-marker.png" width="231" height="190" alt="маркер">
