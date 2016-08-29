@@ -363,14 +363,16 @@ main {
   width: 880px;
   min-height: 200px;
   margin: 0;
-  padding-left: 105px;
-  padding-right: 120px;
+  /*padding-left: 105px;
+  padding-right: 120px;*/
   background-color: #eeeeee;
   padding: 30px 100px 0 100px;
 }
 .catalog-promo h1 {
-  width: 665px;
-  margin: 0;
+  width: 656px;
+  margin-left: 114px;
+  margin-right: 114px;
+  margin-bottom: 95px;
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
@@ -631,58 +633,14 @@ main {
   margin-left: 75px;
 }
 .items .item::before {
-  content: "";
+  content: "...";
   position: absolute;
-  top: 10px;
+  top: -16px;
   left: 10px;
-  width: 10px;
-  height: 10px;
   margin: 0;
-  background-color: red;
-  border-radius: 50%;
+  font-size: 75px;
+  color: #ffffff;
 }
-
-/*.items .item::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 30px;
-  width: 10px;
-  height: 10px;
-  margin: 0;
-  background-color: red;
-  border-radius: 50%;
-}*/
-
-
-/*.items .dots {
-  width: 240px;
-  height: 40px;
-  margin: 0;
-  padding-top: 10px;
-  padding-left: 10px;
-  background: #f1f1f1;
-  border-radius: 5px;
-  overflow: hidden;
-}*/
-
-
-/*.items .dot-1 {
-}*/
-
-
-/*.items .dot-1 {
-  top: 10px;
-  left: 10px;
-}*/
-
-
-/*.item jmg {
-  display: block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}*/
-
 .paginator {
   min-width: 300px;
   margin: 0;
