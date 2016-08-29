@@ -32,7 +32,8 @@ body {
   height: 56px;
   padding-top: 27px;
   margin-right: 10px;
-  background-color: grey;
+  /*только для сетки*/
+  background-color: red;
 }
 .main-menu ul {
   padding: 0;
@@ -342,8 +343,6 @@ main {
   width: 880px;
   height: 168px;
   border-bottom: 2px solid #eeeeee;
-  /*это только для сетки
-  nd-color: #b4d9ab;*/
 }
 .members img {
   float: left;
@@ -363,17 +362,22 @@ main {
 .catalog-promo {
   width: 880px;
   min-height: 200px;
+  margin: 0;
+  padding-left: 105px;
+  padding-right: 120px;
   background-color: #eeeeee;
   padding: 30px 100px 0 100px;
 }
 .catalog-promo h1 {
-  width: 800px;
+  width: 665px;
   margin: 0;
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
+  /*только для сетки*/
+  background-color: red;
 }
 .catalog-filters {
   margin: 0;
@@ -547,6 +551,7 @@ main {
   /*background: #eef7f7;*/
 }
 .sort {
+  position: relative;
   width: 560px;
   margin: 0;
   padding: 0;
@@ -560,7 +565,7 @@ main {
   height: 40px;
   margin-right: 0;
   /*только для сетки*/
-  background: red;
+  /*background: red;*/
 }
 .sort-names ul {
   float: right;
@@ -569,7 +574,7 @@ main {
   padding-top: 0;
   margin: 0;
   /*только для сетки*/
-  background: grey;
+  /*background: grey;*/
 }
 .sort-names li {
   display: inline-block;
@@ -578,41 +583,109 @@ main {
 .sort-names a {
   margin-right: 45px;
   padding-top: 0;
+  color: #000000;
   text-decoration: none;
+  opacity: 0.3;
+  border-bottom: 2px dashed #00ca74;
   /*только для сетки*/
-  background: blue;
+  /*background: blue;*/
 }
 .sort-names a:last-child {
   margin-right: 65px;
 }
-.items a {
+.arrows .down {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  background: url("../img/sprite.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -25px -85px;
+}
+.arrows .up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../img/sprite.png") no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -25px -145px;
+}
+.items .item {
+  position: relative;
   display: inline-block;
   width: 240px;
   height: 270px;
+  margin: 0;
+  margin-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  border-radius: 5px;
   /*только для сетки*/
-  background: green;
+  background: #f1f1f1;
 }
+.items .item:nth-child(2n) {
+  margin-left: 75px;
+}
+
+/*.items .dots {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background: red;
+  /*background: #ffffff;*/
+
+border-radius: 50%;
+
+}
+*/
+/*.items .dot-1 {
+  top: 10px;
+  left: 10px;
+}*/
+
+/*.item jmg {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}*/
 .paginator {
   min-width: 300px;
-  margin: 80px 0;
+  margin: 0;
   padding: 0;
   /*white-space: nowrap;*/
 }
 .paginator a {
   display: inline-block;
-  min-width: 39px;
-  height: 39px;
+  min-width: 36px;
+  height: 36px;
+  margin-right: 10px;
   padding: 13px 13px;
   font-size: 12px;
   font-weight: 500;
   vertical-align: middle;
   text-align: center;
-  line-height: 18px;
+  line-height: 36px;
   color: #000000;
   text-decoration: none;
   background: #f1f1f1;
   border: 3px solid #f1f1f1;
   border-radius: 3px;
+}
+.paginator .next {
+  width: 140px;
+  height: 36px;
+  margin: 0;
+  padding: 13px 30px;
+  font-size: 12px;
+  line-height: 36px;
+  background: #f1f1f1;
+  border: 3px solid #f1f1f1;
+  border-radius: 3px;
+}
+.paginator a:hover {
+  background-color: #ffffff;
 }
 .main-footer {
   margin-top: 85px;
@@ -657,6 +730,7 @@ main {
 .footer-contacts span {
   /*margin: 0;*/
   /*margin-bottom: 21px;*/
+
   padding-left: 20px;
   font-size: 16px;
   line-height: 20px;
@@ -745,7 +819,6 @@ main {
 }
 
 /*иконки*/
-
 .sprite {
   background-image: url(spritesheet.png);
   background-repeat: no-repeat;
