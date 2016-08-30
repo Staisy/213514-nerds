@@ -18,6 +18,7 @@
     padding: 0 10px;
   }
   .main-header {
+    margin: 0;
     color: #000000;
     background-color: #eeeeee;
   }
@@ -30,8 +31,10 @@
     float: left;
     width: 139px;
     height: 56px;
-    margin-right: 10px;
-    padding-top: 27px;
+    padding-left: 5px;
+    padding-top: 25px;
+    /*only for the grid*/
+    background: red;
   }
   .main-navigation ul {
     margin-left: 280px;
@@ -45,7 +48,7 @@
   }
   .main-navigation a {
     display: block;
-    padding-top: 60px;
+    padding-top: 52px;
     padding-right: 0;
     padding-left: 45px;
     padding-bottom: 50px;
@@ -65,7 +68,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 85px;
+    top: 80px;
     left: 45px;
     height: 2px;
     background-color: #fb565a;
@@ -78,8 +81,8 @@
     position: relative;
     vertical-align: top;
     display: inline-block;
-    padding-top: 60px;
-    padding-left: 40px;
+    padding-top: 53px;
+    padding-left: 44px;
     font-size: 14px;
     line-height: 30px;
     color: #000000;
@@ -91,8 +94,8 @@
   .cart .btn::before {
     content: "";
     position: absolute;
-    top: 65px;
-    left: 15px;
+    top: 60px;
+    left: 17px;
     width: 15px;
     height: 15px;
     background: transparent url("../img/sprite.png") no-repeat;
@@ -384,21 +387,23 @@
     margin-right: 0;
   }
   .catalog-promo {
-    width: 880px;
+    /*width: 880px;*/
     min-height: 200px;
     margin: 0;
-    padding-top: 30px;
+    padding: 0;
+    /*padding-top: 30px;
     padding-right: 120px;
     padding-bottom: 50px;
-    padding-left: 105px;
+    padding-left: 105px;*/
     background-color: #eeeeee;
     margin-bottom: 75px;
     /*padding: 30px 100px 0 100px;*/
   }
   .catalog-promo h1 {
     width: 656px;
-    /*margin-left: 114px;
-    margin-right: 114px;*/
+    margin-left: 111px;
+    margin-right: 114px;
+    margin-bottom: 95px;
     font-size: 40px;
     line-height: 48px;
     font-weight: 500;
