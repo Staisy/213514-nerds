@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <style>
     body {
       font-family: "Roboto", "Arial", sans-serif;
     }
   </style>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <title>HTML Academy: Нёрдс</title>
 </head>
@@ -17,10 +18,10 @@
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <div class="main-logo">
-        <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип">
-      </div>
-      <nav class="main-menu">
+      <nav class="main-navigation">
+        <a class="logo">
+          <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип">
+        </a>
         <ul>
           <li>
             <a href="#">Cтудия</a>
@@ -29,11 +30,12 @@
             <a href="#">Клиенты</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a href="../213514-nerds/catalog.html">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
           </li>
+
         </ul>
       </nav>
       <div class="cart">
@@ -42,14 +44,53 @@
     </div>
   </header>
   <main class="container">
-    <div class="promo">
-      <p class="slogan"><b>Долго, дорого, скрупулезно.</b></p>
-      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      <a class="btn" href="#">Узнать больше</a>
-      <img class="current-slide" src="img/main-slider.png" width="338" height="231" alt="гаджеты">
-      <div class="bullets"></div>
-      <!--буллеты пропишу в стилях, правда не знаю пока, каким образом-->
-    </div>
+
+    <section class="promo clearfix">
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого,
+                <br>скрупулезно.
+              </div>
+              <p>Математически выверенный дизайн
+                <br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику,
+                <br>как любим ее мы?
+              </div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные
+                <br>за креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,
+                <br>только хардкор!
+              </div>
+              <p>Все дизайнерские решения в нашей компании принимаются
+                <br>только под воздействием качественных галлюциногенов</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="features clearfix">
       <div class="features-item">
         <img src="img/features-websites.jpg" width="240" height="124" alt="вебсайты">
@@ -61,7 +102,8 @@
       <div class="features-item">
         <img src="img/features-applications.jpg" width="240" height="124" alt="приложения">
         <h2>Приложения</h2>
-        <p>Покорите топ-10 приложений в AppStore Google и Play</p>
+        <p>Покорите топ-10 приложений
+          <br> в AppStore Google и Play</p>
         <a class="btn" href="#">Заказать</a>
       </div>
       <div class="features-item">
@@ -74,35 +116,39 @@
     </section>
     <section class="content clearfix">
       <div class="content-left">
-        <p class="slogan"><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        <div class="content-text">
+          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        </div>
 
         <h3>Выполняем заказы на разработку:</h3>
         <ul>
           <li>
-            <p>Веб-сайтов любой сложности</p>
+            Веб-сайтов любой сложности
           </li>
           <li>
-            <p>Мобильных приложений для iOS и Android</p>
+            Мобильных приложений для iOS и Android
           </li>
           <li>
-            <p>Слайдшоу и видео для корпоративных презентаций</p>
+            Слайдшоу и видео для корпоративных презентаций
           </li>
         </ul>
       </div>
       <div class="content-right">
-        <img src="img/content-logo.png" width="187" height="75" alt="логотип">
-        <p>Since 2004</p>
+        <div class="content-promo">
+          <img src="img/content-logo.png" width="187" height="75" alt="логотип">
+          <b>Since 2004</b>
+        </div>
         <h3>Как мы работаем:</h3>
         <ul>
           <li>
-            <p>С самоотдачей 146%</p>
+            С самоотдачей 146%
           </li>
           <li>
-            <p>Соблюдая сроки на 100%</p>
+            Соблюдая сроки на 100%
           </li>
           <li>
-            <p>По предоплате 50%</p>
+            По предоплате 50%
           </li>
         </ul>
       </div>
@@ -116,8 +162,7 @@
   <footer class="main-footer">
     <div class="container clearfix">
       <section class="footer-map">
-        <!--Карту я пропишу стилем, как фоновое изображение, как-то так:
-      .footer-map {background-image: url("http://placehold.it/1199x416.png");}-->
+
         <div class="footer-contacts">
           <h2>Nёrds design studio</h2>
           <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -125,16 +170,16 @@
           <a class="btn" href="#">Как нас найти?</a>
         </div>
         <div class="footer-marker">
-          <img src="img/map-marker.png" width="231" height="190" alt="маркер">
-          <img src="img/map-logo.png" width="92" height="37" alt="логотип">
+          <img src="img/footer-map-marker.png" width="231" height="190" alt="маркер">
+
         </div>
       </section>
+      <!--it's a footer at all-->
       <section class="footer-social">
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <p><b>Давайте дружить, это выгодно!</b></p>
-        <p>Cкидка 10% для друзей из социальных сетей.</p>
+        <p><b>Давайте дружить, это выгодно!</b> Cкидка 10% для друзей из социальных сетей.</p>
       </section>
     </div>
 

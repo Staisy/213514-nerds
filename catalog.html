@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <style>
     body {
       font-family: "Roboto", sans-serif;
     }
   </style>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <title>HTML Academy: Нёрдс</title>
 </head>
@@ -17,18 +18,19 @@
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <a class="main-logo" href="#">
-        <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип"></a>
-      <nav class="main-menu">
+      <nav class="main-navigation">
+        <a class="logo" href="../213514-nerds/index.html">
+          <img class="main-logo" src="img/main-logo.png" width="139" height="56" alt="логотип"></a>
         <ul>
           <li>
-            <a href="#">Cтудия</a>
+            <a href="../213514-nerds/index.html">Студия</a>
           </li>
           <li>
             <a href="#">Клиенты</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a class="active" href="#">Магазин
+            </a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -37,75 +39,60 @@
       </nav>
       <div class="cart">
         <a class="btn" href="#">Корзина</a>
+      </div>
+    </div>
   </header>
   <main class="container clearfix">
-
-
-    <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
-
+    <div class="catalog-promo">
+      <h1>Добро пожаловать в магазин готовых макетов</h1>
+    </div>
     <section class="catalog-filters">
       <form class="search" action="selection" method="get">
         <fieldset class="prices-filter">
           <legend>Стоимость</legend>
-          <!--<div class="range-controls">
+          <div class="range-controls">
             <div class="scale">
-              <div style="margin-left:50px;width:200px" class="bar">
+              <div style="width:70%" class="bar">
               </div>
             </div>
             <div class="toggle min-toggle"></div>
             <div class="toggle max-toggle"></div>
           </div>
           <div class="price-controls">
-            от
-            <input class="min-price" type="text" value="0"> до
-            <input class="max-price" type="text" value="15000">
-          </div>-->
+            ОТ
+            <input name="min-price" class="min-price" type="text" value="0"> ДО
+            <input name="max-price" class="max-price" type="text" value="15000">
+          </div>
         </fieldset>
         <fieldset class="grid-filter">
           <legend>Сетка:</legend>
-          <div class="grid-form">
-            <input type="radio" id="adaptive" name="grid" value="#">
-            <label for="adaptive">Адаптивная</label>
-          </div>
-          <div class="grid-form">
-            <input type="radio" id="fixed" name="grid" value="#">
-            <label for="fixed">Фиксированная</label>
-          </div>
-          <div class="grid-form">
-            <input type="radio" id="flexible" name="grid" value="#">
-            <label for="flexible">Резиновая</label>
-          </div>
+          <input type="radio" id="adaptive" name="grid" value="#">
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" id="fixed" name="grid" value="#">
+          <label for="fixed">Фиксированная</label>
+          <input type="radio" id="flexible" name="grid" value="#">
+          <label for="flexible">Резиновая</label>
         </fieldset>
         <fieldset class="features-filter">
           <legend>Особенности:</legend>
-          <div class="feature-form">
-            <input type="checkbox" id="slider" name="slider">
-            <label for="slider">Слайдер</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="beauties-block" name="beauties-block">
-            <label for="beauties-block">Блок преимуществ</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="news" name="news">
-            <label for="news">Новости</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="gallery" name="gallery">
-            <label for="gallery">Галерея</label>
-          </div>
-          <div class="feature-form">
-            <input type="checkbox" id="cart" name="cart">
-            <label for="cart">Корзина</label>
-          </div>
+          <input type="checkbox" id="slider" name="slider">
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" id="beauties-block" name="beauties-block">
+          <label for="beauties-block">Блок преимуществ</label>
+          <input type="checkbox" id="news" name="news">
+          <label for="news">Новости</label>
+          <input type="checkbox" id="gallery" name="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" id="cart" name="cart">
+          <label for="cart">Корзина</label>
         </fieldset>
         <input class="btn" type="submit" value="Показать">
       </form>
     </section>
-    <section class="catalog-features">
-      <div>
-        <h2>СОРТИРОВАТЬ:</h2>
-        <nav class="breadcrumbs">
+    <section class="catalog-items">
+      <div class="sort">
+        <span>Сортировать:</span>
+        <div class="sort-names">
           <ul>
             <li>
               <a href="#">По цене</a>
@@ -117,66 +104,60 @@
               <a href="#">По функционалу</a>
             </li>
           </ul>
-        </nav>
-        <div class="arrows"></div>
-        <!--стрелочки прописать в CSS position:absolute;
-      <div class="catalog-items">-->
+        </div>
+        <div class="arrows">
+          <a class="active down" href="#"></a>
+          <a class="up" href="#"></a>
+        </div>
       </div>
-      <a class="item" href="#">
-        <img src="img/catalog-item1.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item2.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item3.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item4.jpg" width="240" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item5.jpg" width="239" height="240" alt="изображение продукта">
-      </a>
-      <a class="item" href="#">
-        <img src="img/catalog-item6.jpg" width="239" height="240" alt="изображение продукта">
-      </a>
+      <div class="items">
+        <a class="item" href="#">
+          <img src="img/catalog-item1.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item2.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item3.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item4.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item5.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
+        <a class="item" href="#">
+          <img src="img/catalog-item6.jpg" width="240" height="240" alt="изображение продукта">
+        </a>
       </div>
       <div class="paginator">
-        <a href="#1">1</a>
+        <a class="active" href="#1">1</a>
         <a href="#2">2</a>
         <a href="#3">3</a>
-        <a href="#4">Следующая</a>
+        <a class="next" href="#4">Следующая</a>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="container clearfix">
       <section class="footer-map">
-        <!--Карту я пропишу стилем, как фоновое изображение, как-то так:
-      .footer-map {background-image: url("http://placehold.it/1199x416.png");}-->
         <div class="footer-contacts">
           <h2>Nёrds design studio</h2>
-          <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">Как нас найти?</a>
+          <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p> <span>тел.+7(812)275-75-75</span>
+          <a class="btn" href="#">Напишите нам</a>
         </div>
         <div class="footer-marker">
-          <img src="img/map-marker.png" width="231" height="190" alt="маркер">
-          <img src="img/map-logo.png" width="92" height="37" alt="логотип">
+          <img src="img/footer-map-marker.png" width="231" height="190" alt="маркер">
         </div>
-
       </section>
       <section class="footer-social">
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <p><b>Давайте дружить, это выгодно!</b></p>
-        <p>Cкидка 10% для друзей из социальных сетей.</p>
+        <p><b>Давайте дружить, это выгодно!</b> Cкидка 10% для друзей из социальных сетей.</p>
       </section>
     </div>
-
   </footer>
 </body>
 
 </html>
-l>
