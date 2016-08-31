@@ -31,7 +31,7 @@
     float: left;
     width: 139px;
     height: 56px;
-    padding-left: 5px;
+    padding-left: 0;
     padding-top: 25px;
     /*only for the grid*/
     background: red;
@@ -50,7 +50,7 @@
     display: block;
     padding-top: 52px;
     padding-right: 0;
-    padding-left: 45px;
+    padding-left: 43px;
     padding-bottom: 50px;
     font-size: 14px;
     line-height: 30px;
@@ -388,29 +388,31 @@
   }
   .catalog-promo {
     /*width: 880px;*/
-    min-height: 200px;
+    /*min-height: 200px;*/
     margin: 0;
     padding: 0;
-    /*padding-top: 30px;
-    padding-right: 120px;
+    padding-top: 14px;
+    /*padding-right: 120px;
     padding-bottom: 50px;
     padding-left: 105px;*/
     background-color: #eeeeee;
-    margin-bottom: 75px;
+    margin-bottom: 78px;
     /*padding: 30px 100px 0 100px;*/
   }
   .catalog-promo h1 {
     width: 656px;
-    margin-left: 111px;
-    margin-right: 114px;
-    margin-bottom: 95px;
+    margin: 0;
+    /*margin-top: 30px;*/
+    padding-left: 108px;
+    padding-right: 125px;
+    padding-bottom: 85px;
     font-size: 40px;
     line-height: 48px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     /*только для сетки*/
-    background-color: red;
+    /*background-color: red;*/
   }
   .catalog-filters {
     float: left;
