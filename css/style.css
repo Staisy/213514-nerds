@@ -32,7 +32,7 @@
     width: 139px;
     height: 56px;
     padding-left: 0;
-    padding-top: 25px;
+    padding-top: 26px;
     /*only for the grid*/
     background: red;
   }
@@ -48,9 +48,9 @@
   }
   .main-navigation a {
     display: block;
-    padding-top: 52px;
+    padding-top: 54px;
     padding-right: 0;
-    padding-left: 43px;
+    padding-left: 44px;
     padding-bottom: 50px;
     font-size: 14px;
     line-height: 30px;
@@ -426,7 +426,7 @@
     text-transform: none;
   }
   .catalog-filters legend {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
     font-size: 18px;
     color: #000000;
     text-transform: uppercase;
@@ -453,12 +453,13 @@
   }
   .range-controls .bar {
     height: 2px;
-    background: #00ca74;
+    /*background: #00ca74;*/
+    background: red;
   }
   .range-controls .toggle {
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: 20px;
     width: 4px;
     height: 4px;
     border: 8px solid white;
@@ -468,7 +469,7 @@
     box-shadow: 0 2px 1px 0 #cfcfcf;
   }
   .range-controls .max-toggle {
-    left: 155px;
+    left: 160px;
   }
   .price-controls input {
     width: 60px;
