@@ -428,37 +428,38 @@
   .catalog-filters legend {
     margin-bottom: 13px;
     font-size: 18px;
+    font-weight: 500;
     color: #000000;
     text-transform: uppercase;
   }
   .prices-filter {
     width: 240px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     padding-left: 0;
     border: none;
   }
   .range-controls {
     position: relative;
     height: 80px;
-    margin-bottom: 15px;
-    padding: 0 30px;
+    margin-bottom: 14px;
+    padding: 0 23px;
     background: #f1f1f1;
     border-radius: 5px;
     overflow: hidden;
   }
   .range-controls .scale {
     height: 2px;
-    margin-top: 40px;
+    margin-top: 39px;
     background: #d7dcde;
   }
   .range-controls .bar {
     height: 2px;
     /*background: #00ca74;*/
-    background: red;
+    /*background: red;*/
   }
   .range-controls .toggle {
     position: absolute;
-    top: 30px;
+    top: 29px;
     left: 20px;
     width: 4px;
     height: 4px;
@@ -473,7 +474,7 @@
   }
   .price-controls input {
     width: 60px;
-    margin-left: 10px;
+    margin-left: 6px;
     padding: 10px;
     border: none;
     font-size: 16px;
@@ -481,11 +482,12 @@
     font-weight: 500;
     text-align: center;
     color: #283136;
-    background: #f1f1f1;
+    /*background: #f1f1f1;*/
+    background: red;
     border-radius: 5px;
   }
   .price-controls .min-price {
-    margin-right: 5px;
+    margin-right: 12px;
   }
   .grid-filter {
     width: 240px;
@@ -500,14 +502,17 @@
   .grid-filter input+ label {
     position: relative;
     display: block;
-    margin: 20px 0;
+    margin: 13px 0;
     padding-left: 35px;
+    /*padding: 10px 0;*/
+    font-size: 16px;
+    line-height: 20px;
     cursor: pointer;
   }
   .grid-filter input+ label::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     background: url("../img/sprite.png") no-repeat;
     width: 25px;
