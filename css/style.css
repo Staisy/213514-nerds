@@ -502,9 +502,9 @@
   .grid-filter input+ label {
     position: relative;
     display: block;
-    margin: 13px 0;
+    margin: 1px 0;
     padding-left: 35px;
-    /*padding: 10px 0;*/
+    padding-bottom: 20px;
     font-size: 16px;
     line-height: 20px;
     cursor: pointer;
@@ -512,7 +512,7 @@
   .grid-filter input+ label::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: 1;
     left: 0;
     background: url("../img/sprite.png") no-repeat;
     width: 25px;
