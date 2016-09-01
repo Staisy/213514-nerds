@@ -622,10 +622,12 @@ main {
 .sort-names li {
   display: inline-block;
   vertical-align: top;
+  font-size: 0;
 }
 .sort-names a {
   margin-right: 41px;
   padding-top: 0;
+  font-size: 12px;
   color: #000000;
   text-decoration: none;
   opacity: 0.3;
@@ -648,7 +650,7 @@ main {
 .arrows .up {
   position: absolute;
   top: 3px;
-  right: 0;
+  right: -2px;
   background: url("../img/sprite.png") no-repeat;
   width: 11px;
   height: 10px;
@@ -659,21 +661,24 @@ main {
   min-height: 970px;
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 .items .item {
   position: relative;
   display: inline-block;
   width: 240px;
   height: 240px;
-  margin-left: 0;
+  margin-left: 1px;
   margin-bottom: 80px;
   padding-top: 30px;
+  padding-left: 0;
   /*padding-bottom: 0;*/
+  font-size: 3px;
   background-color: #f1f1f1;
   border-radius: 5px;
 }
-.items .item:nth-child(2n+1) {
-  margin-right: 76px;
+.items .item:nth-child(2n) {
+  margin-left: 79px;
 }
 .items .item::before {
   content: "...";
@@ -682,13 +687,14 @@ main {
   left: 10px;
   margin: 0;
   font-size: 70px;
-  /*letter-spacing: 0;*/
+  letter-spacing: -2px;
   color: #ffffff;
 }
 .paginator {
   min-width: 300px;
   margin: 0;
   padding: 0;
+  font-size: 0;
   /*white-space: nowrap;*/
   background: red;
 }
@@ -705,7 +711,7 @@ main {
   line-height: 26px;
   color: #000000;
   text-decoration: none;
-  /*background: #f1f1f1;*/
+  background: #f1f1f1;
   border: 3px solid #f1f1f1;
   border-radius: 3px;
 }
