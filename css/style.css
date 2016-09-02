@@ -24,14 +24,14 @@ body {
 }
 .main-navigation {
   float: left;
-  width: 770px;
+  width: 769px;
 }
 .main-navigation .logo {
   display: block;
   float: left;
   width: 139px;
   height: 56px;
-  padding-left: 0;
+  padding-left: 3px;
   padding-top: 26px;
   /*only for the grid*/
   background: red;
@@ -49,7 +49,7 @@ body {
 .main-navigation a {
   display: block;
   padding-top: 54px;
-  padding-right: 0;
+  padding-right: 1px;
   padding-left: 44px;
   padding-bottom: 50px;
   font-size: 14px;
@@ -719,7 +719,7 @@ main {
   height: 26px;
   margin-top: 1px;
   margin-left: 1px;
-  margin-right: 9px;
+  margin-right: 10px;
   padding: 4px 4px;
   font-size: 12px;
   font-weight: 500;
