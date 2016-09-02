@@ -760,6 +760,7 @@ main {
   padding-top: 88px;
   padding-left: 10px;
   background: url("../img/footer-map.jpg") no-repeat center top;
+  margin-bottom: 0;
 }
 .footer-contacts {
   margin: 0;
@@ -822,6 +823,8 @@ main {
 .footer-social {
   width: 880px;
   height: 215px;
+  margin-top: -10px;
+  padding: 0;
   background-color: #ffffff;
 }
 .social-btn {
@@ -830,7 +833,9 @@ main {
   display: block;
   width: 63px;
   height: 63px;
-  margin: 0 4px;
+  /*margin: 0 10px;*/
+  margin-left: 1px;
+  margin-right: 26px;
   font-size: 0;
   text-decoration: none;
   border-radius: 50%;
@@ -864,13 +869,17 @@ main {
 }
 .footer-social p {
   float: right;
-  width: 550px;
-  margin: 0;
+  width: 546px;
+  margin-top: 0;
   margin-bottom: 73px;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 28px;
   color: #283136;
   text-transform: none;
 }
 .footer-social b {
+  padding-top: 0;
   font-weight: 500;
   font-size: 36px;
   line-height: 36px;
