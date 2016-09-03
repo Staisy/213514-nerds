@@ -930,19 +930,34 @@ main {
   transform: rotate(-45deg);
 }
 .modal-content .letter-form {
-  margin-top: 35px;
+  margin-top: 24px;
   margin-bottom: 24px;
 }
-
-/*.name-field label, .email-field label {
-  display: block;
-  margin-bottom: 13px;
+.letter-form input[type="text"], .letter-form input[type="email"] {
+  width: 185px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  padding: 8px 15px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+}
+.letter-form input[type="email"] {
+  margin-right: 0;
+}
+.name-field p, .email-field label {
+  margin: 0;
   font-size: 10px;
   line-height: 10px;
-  font-family: inherit;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: none;
-}*/
-
+  background-color: yellow;
+}
 
 /*иконки*/
 
