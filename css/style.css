@@ -929,6 +929,20 @@ main {
 .modal-content-close::after {
   transform: rotate(-45deg);
 }
+.modal-content .letter-form {
+  margin-top: 35px;
+  margin-bottom: 24px;
+}
+
+/*.name-field label, .email-field label {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 10px;
+  line-height: 10px;
+  font-family: inherit;
+  text-transform: none;
+}*/
+
 
 /*иконки*/
 
