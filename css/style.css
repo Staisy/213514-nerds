@@ -955,6 +955,14 @@ main {
   margin-top: 24px;
   margin-bottom: 24px;
 }
+.letter-form .name-field {
+  float: left;
+  width: 217px;
+}
+.letter-form .email-field {
+  float: right;
+  width: 217px;
+}
 .letter-form input[type="text"], .letter-form input[type="email"] {
   width: 185px;
   margin: 0;
@@ -969,12 +977,8 @@ main {
   background-color: #ffffff;
   border: 2px solid #d7dcde;
 }
-.letter-form input[type="email"] {
-  margin-right: 0;
-}
-.name-field p, .email-field p {
-  display: inline-block;
-  width: 100px;
+.name-field label, .email-field label {
+  width: 85px;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
