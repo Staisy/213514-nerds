@@ -921,7 +921,8 @@ main {
   left: 50%;
   margin-left: -324px;
   width: 458px;
-  padding: 58px 90px 50px 82px;
+  /*padding: 58px 90px 50px 82px;*/
+  padding: 40px 90px 0 82px;
   color: #000000;
   /*background: #ffffff;*/
   /*only for the grid*/
@@ -956,10 +957,12 @@ main {
 .modal-content-close::after {
   transform: rotate(-45deg);
 }
-.modal-content .letter-form {
+
+/*.modal-content .letter-form {
   margin: 0;
-  padding-top: 24px;
-}
+  padding: 0;
+}*/
+
 .letter-form .name-field, .letter-form .email-field {
   width: 217px;
   /*margin-top: 24px;*/
@@ -991,7 +994,7 @@ main {
 }
 .name-field label, .email-field label {
   width: 85px;
-  margin: 0;
+  padding-bottom: 7px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
