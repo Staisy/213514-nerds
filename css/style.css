@@ -384,6 +384,7 @@ main {
 .members img {
   float: left;
   margin-right: 70px;
+  opacity: 0.2;
   /*padding-left: 12px;
   padding-right: 28px;*/
 }
@@ -405,8 +406,12 @@ main {
   margin-top: 45px;
   margin-left: 6px;
   margin-right: 0;
+  padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 0;
+}
+.members img:hover {
+  opacity: 1.0;
 }
 .catalog-promo {
   /*width: 880px;*/
@@ -952,22 +957,26 @@ main {
   transform: rotate(-45deg);
 }
 .modal-content .letter-form {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 0;
+  padding-top: 24px;
+}
+.letter-form .name-field, .letter-form .email-field {
+  width: 217px;
+  /*margin-top: 24px;*/
+  /*only for the grid*/
+  background: green;
 }
 .letter-form .name-field {
   float: left;
-  width: 217px;
 }
 .letter-form .email-field {
   float: right;
-  width: 217px;
 }
-.letter-form input[type="text"], .letter-form input[type="email"] {
+.name-field input[type="text"], .email-field input[type="email"] {
   width: 185px;
   margin: 0;
   margin-bottom: 20px;
-  margin-right: 15px;
+  margin-right: 20px;
   padding: 8px 15px;
   font-size: 12px;
   line-height: 18px;
@@ -976,6 +985,9 @@ main {
   text-transform: uppercase;
   background-color: #ffffff;
   border: 2px solid #d7dcde;
+}
+.email-field input[type="email"] {
+  margin-right: 0;
 }
 .name-field label, .email-field label {
   width: 85px;
