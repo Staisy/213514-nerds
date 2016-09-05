@@ -191,16 +191,16 @@ main {
 .slide {
   display: none;
 }
-#btn-1:checked~ .slides .slide:nth-child(1) {
+#btn-1:checked~.slides .slide:nth-child(1) {
   display: block;
 }
-#btn-2:checked~ .slides .slide:nth-child(2) {
+#btn-2:checked~.slides .slide:nth-child(2) {
   display: block;
 }
-#btn-3:checked~ .slides .slide:nth-child(3) {
+#btn-3:checked~.slides .slide:nth-child(3) {
   display: block;
 }
-#btn-1:checked~ .slider-controls label[for="btn-1"], #btn-2:checked~ .slider-controls label[for="btn-2"], #btn-3:checked~ .slider-controls label[for="btn-3"] {
+#btn-1:checked~.slider-controls label[for="btn-1"], #btn-2:checked~.slider-controls label[for="btn-2"], #btn-3:checked~.slider-controls label[for="btn-3"] {
   background: #c1c1c1;
 }
 .features {
@@ -307,20 +307,21 @@ main {
   text-transform: none;
 }
 .content-text {
-  width: 580px;
+  width: 620px;
+  margin: 0;
   padding-top: 53px;
 }
 .content-text b {
   display: block;
   margin-bottom: 15px;
-  padding-right: 35px;
+  padding-right: 27px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 500;
 }
 .content-text p {
+  padding: 0;
   padding-top: 2px;
-  padding-right: 2px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -376,7 +377,7 @@ main {
 }
 .members {
   width: 880px;
-  height: 168px;
+  height: 166px;
   margin: 0;
   border-bottom: 2px solid #eeeeee;
 }
@@ -521,7 +522,7 @@ main {
 .grid-filter input {
   display: none;
 }
-.grid-filter input+ label {
+.grid-filter input+label {
   position: relative;
   display: block;
   margin: 1px 0;
@@ -531,7 +532,7 @@ main {
   line-height: 20px;
   cursor: pointer;
 }
-.grid-filter input+ label::before {
+.grid-filter input+label::before {
   content: "";
   position: absolute;
   top: 1;
@@ -542,7 +543,7 @@ main {
   background-position: -25px -541px;
   opacity: 0.5;
 }
-.grid-filter input+ label::before:hover {
+.grid-filter input+label::before:hover {
   width: 25px;
   height: 25px;
   background-position: -25px -541px;
@@ -551,7 +552,7 @@ main {
 .grid-filter label:hover::before {
   opacity: 1.0;
 }
-.grid-filter input:checked+ label::after {
+.grid-filter input:checked+label::after {
   content: "";
   position: absolute;
   top: 0;
@@ -570,7 +571,7 @@ main {
 .features-filter input {
   display: none;
 }
-.features-filter input+ label {
+.features-filter input+label {
   position: relative;
   display: block;
   /*margin: 10px 0;*/
@@ -584,7 +585,7 @@ main {
 .features-filter label:hover::before {
   opacity: 1.0;
 }
-.features-filter input+ label::before {
+.features-filter input+label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -595,7 +596,7 @@ main {
   background-position: -25px -468px;
   opacity: 0.5;
 }
-.features-filter input:checked+ label::after {
+.features-filter input:checked+label::after {
   content: "";
   position: absolute;
   top: 0;
@@ -738,7 +739,7 @@ main {
   display: inline-block;
   min-width: 26px;
   height: 26px;
-  margin-top: 1px;
+  /*margin-top: 1px;*/
   margin-left: 1px;
   margin-right: 10px;
   padding: 4px 4px;
@@ -772,7 +773,7 @@ main {
   background-color: #ffffff;
 }
 .main-footer {
-  margin-top: 80px;
+  margin-top: 82px;
 }
 .footer-map {
   position: relative;
@@ -971,10 +972,12 @@ main {
 .letter-form input[type="email"] {
   margin-right: 0;
 }
-.name-field p, .email-field label {
+.name-field p, .email-field p {
+  display: inline-block;
+  width: 100px;
   margin: 0;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 16px;
+  line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   text-transform: none;
   background-color: yellow;
