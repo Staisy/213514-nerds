@@ -734,7 +734,7 @@ main {
   color: #ffffff;
 }
 .items .active:hover {
-  background: #797979;
+  background-color: #797979;
 }
 .paginator {
   min-width: 300px;
