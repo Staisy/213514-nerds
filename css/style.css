@@ -920,13 +920,12 @@ main {
   top: 276px;
   left: 50%;
   margin-left: -324px;
-  width: 458px;
-  /*padding: 58px 90px 50px 82px;*/
-  padding: 40px 90px 0 82px;
+  width: 460px;
+  padding: 40px 90px 0 80px;
   color: #000000;
-  /*background: #ffffff;*/
+  background: #ffffff;
   /*only for the grid*/
-  background: grey;
+  /*background: grey;*/
 }
 .modal-content-close {
   position: absolute;
@@ -964,10 +963,10 @@ main {
 }*/
 
 .letter-form .name-field, .letter-form .email-field {
-  width: 217px;
+  width: 220px;
   /*margin-top: 24px;*/
   /*only for the grid*/
-  background: green;
+  /*background: green;*/
 }
 .letter-form .name-field {
   float: left;
@@ -979,7 +978,7 @@ main {
   width: 185px;
   margin: 0;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 12px;
   padding: 8px 15px;
   font-size: 12px;
   line-height: 18px;
@@ -994,12 +993,26 @@ main {
 }
 .name-field label, .email-field label {
   width: 85px;
-  padding-bottom: 7px;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   text-transform: none;
   background-color: yellow;
+}
+.letter-form p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+}
+.letter-form .comment-field {
+  width: 382px;
+  height: 80px;
+  padding: 10px 60px 20px 15px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 /*иконки*/
