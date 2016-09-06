@@ -183,6 +183,28 @@
     </div>
 
   </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть
+    </button>
+    <form class="letter-form" action="#" metod="post">
+      <div class="name-field">
+        <label class="name-field" for="user-name">
+          Ваше имя:
+        </label>
+        <input class="name-field" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="email-field">
+        <label class="email-field" for="user-email">
+          Ваш e-mail:
+        </label>
+        <input class="email-field" id="user-email" type="email" name="user-email" placeholder="Для отправки ответа" required>
+      </div>
+      <p>Текст письма:</p>
+      <textarea class="comment-field" id="user-comment" name="comment" row="10" cols="60">В свободной форме</textarea>
+      <button type="submit" value="Отправить">Отправить</button>
+    </form>
+
+  </div>
 </body>
 
 </html>
