@@ -58,6 +58,9 @@ body {
 .main-navigation a:hover {
   color: #fb565a;
 }
+.main-navigation a:focus {
+  color: #8f8f8f;
+}
 .main-navigation .active:hover {
   color: #000000;
 }
@@ -253,17 +256,26 @@ main {
 .features-item:nth-child(1) .btn:hover {
   background: #d6494d;
 }
+.features-item:nth-child(1) .btn:focus {
+  background: #b63538;
+}
 .features-item:nth-child(2) .btn {
   background: #00ca74;
 }
 .features-item:nth-child(2) .btn:hover {
   background: #01a25e;
 }
+.features-item:nth-child(2) .btn:focus {
+  background: #009053;
+}
 .features-item:nth-child(3) .btn {
   background: #efc84a;
 }
 .features-item:nth-child(3) .btn:hover {
   background: #d6ae2c;
+}
+.features-item:nth-child(1) .btn:focus {
+  background: #c09b24;
 }
 .content {
   width: 880px;
@@ -411,6 +423,12 @@ main {
 .members img:hover {
   opacity: 1.0;
 }
+.members img:focus {
+  background: #333333
+}
+
+/*внутренняя страница*/
+
 .catalog-promo {
   margin: 0;
   padding: 0;
@@ -527,7 +545,7 @@ main {
 .grid-filter input+label::before {
   content: "";
   position: absolute;
-  top: 1;
+  top: 1px;
   left: 0;
   background: url("../img/sprite.png") no-repeat;
   width: 25px;
@@ -653,6 +671,12 @@ main {
   opacity: 0.3;
   border-bottom: 2px dotted #00ca74;
 }
+.sort-names a:hover {
+  border-bottom: 2px solid #00ca74;
+}
+.sort-names a:focus {
+  color: #444444;
+}
 .arrows .down {
   position: absolute;
   top: 3px;
@@ -754,6 +778,10 @@ main {
 }
 .paginator .active {
   background-color: #ffffff;
+}
+.paginator a:focus {
+  background-color: #d5d5d5;
+  box-shadow: 0 -2px 0 0 #b5b5b5;
 }
 .main-footer {
   margin-top: 82px;
@@ -967,7 +995,7 @@ main {
   border-color: #999999;
 }
 .name-field input[type="text"]:focus, .email-field input[type="email"]:focus {
-  border-color: #56ffb;
+  border-color: #56bffb;
 }
 .name-field label, .email-field label {
   width: 85px;
