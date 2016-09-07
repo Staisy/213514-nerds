@@ -765,7 +765,9 @@ main {
 .active .item-block {
   position: absolute;
   left: 20px;
+  right: 20px;
   bottom: 20px;
+  padding: 30px;
   width: 140px;
   height: 30px;
   text-align: center;
