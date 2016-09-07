@@ -643,6 +643,7 @@ main {
   background-color: #f1f1f1;
   border-radius: 3px;
   border: none;
+  outline: none;
 }
 .catalog-filters .btn:hover {
   background-color: #d5d5d5;
@@ -768,8 +769,6 @@ main {
   right: 20px;
   bottom: 20px;
   padding: 30px;
-  width: 140px;
-  height: 30px;
   text-align: center;
   background: #ffffff;
   opacity: 0;
