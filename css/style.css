@@ -532,6 +532,11 @@ main {
 .price-controls .min-price {
   margin-right: 13px;
 }
+.price-controls label {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
 .grid-filter {
   width: 240px;
   height: 145px;
@@ -743,22 +748,54 @@ main {
   letter-spacing: -2px;
   color: #ffffff;
 }
-.items .active {
-  position: relative;
-}
 .items .active:hover {
   background-color: #797979;
 }
-
-/*.items .active:active {}*/
-
-.items .item-block {
+.active .item-block {
+  display: none;
   position: absolute;
   left: 20px;
   bottom: 20px;
   width: 200px;
   height: 200px;
+  margin: 0;
   background: #ffffff;
+}
+.active .item-name {
+  margin: 35px auto 12px;
+  /*margin: 0;*/
+  padding: 65px 65px 12px 65px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+.active p {
+  /*width: 140px;*/
+  margin: 0;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #b1b3b4;
+  text-transform: none;
+}
+.active .btn {
+  display: block;
+  width: 140px;
+  margin-top: 38px;
+  margin-right: 24px;
+  margin-bottom: 29px;
+  margin-left: 32px;
+  padding: 10px 0 8px 0;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
 }
 .paginator {
   min-width: 300px;
