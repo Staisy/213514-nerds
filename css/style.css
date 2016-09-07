@@ -95,7 +95,7 @@ body {
 .cart .btn:hover {
   color: #fb565a;
 }
-.cart .btn:focus {
+.cart .btn:active {
   color: #8f8f8f;
 }
 .cart .btn::before {
@@ -109,7 +109,7 @@ body {
   background-position: -25px -265px;
   opacity: 0.3;
 }
-.cart .btn::before:focus {
+.cart .btn:active::before {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -25px -265px;
   opacity: 0.15;
@@ -118,9 +118,6 @@ body {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -25px -330px;
   opacity: 1.0;
-}
-main {
-  min-height: 1100px;
 }
 .promo {
   min-width: 880px;
@@ -219,6 +216,9 @@ main {
 #btn-1:checked~.slider-controls label[for="btn-1"], #btn-2:checked~.slider-controls label[for="btn-2"], #btn-3:checked~.slider-controls label[for="btn-3"] {
   background: #c1c1c1;
 }
+main {
+  min-height: 1100px;
+}
 .features {
   width: 880px;
   border-bottom: 2px solid #eeeeee;
@@ -269,7 +269,7 @@ main {
 .features-item:nth-child(1) .btn:hover {
   background: #d6494d;
 }
-.features-item:nth-child(1) .btn:focus {
+.features-item:nth-child(1) .btn:active {
   background: #b63538;
 }
 .features-item:nth-child(2) .btn {
@@ -278,7 +278,7 @@ main {
 .features-item:nth-child(2) .btn:hover {
   background: #01a25e;
 }
-.features-item:nth-child(2) .btn:focus {
+.features-item:nth-child(2) .btn:active {
   background: #009053;
 }
 .features-item:nth-child(3) .btn {
@@ -436,7 +436,7 @@ main {
 .members img:hover {
   opacity: 1.0;
 }
-.members img:focus {
+.members img:active {
   background: #333333
 }
 
@@ -450,12 +450,13 @@ main {
   margin-bottom: 78px;
 }
 .catalog-promo h1 {
-  width: 656px;
-  margin-top: 5px;
-  margin-left: 355px;
-  padding-left: 108px;
+  width: 700px;
+  margin: 0 auto 80px;
+  padding: 5px;
+  /*margin-left: 355px;*/
+  /*padding-left: 108px;
   padding-right: 125px;
-  padding-bottom: 57px;
+  padding-bottom: 52px;*/
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
@@ -793,7 +794,7 @@ main {
 .paginator .active {
   background-color: #ffffff;
 }
-.paginator a:focus {
+.paginator a:active {
   background-color: #d5d5d5;
   box-shadow: 0 -2px 0 0 #b5b5b5;
 }
