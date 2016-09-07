@@ -758,6 +758,7 @@ main {
   bottom: 20px;
   width: 200px;
   height: 200px;
+  background: #ffffff;
 }
 .paginator {
   min-width: 300px;
