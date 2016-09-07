@@ -56,9 +56,9 @@
           </div>
           <div class="price-controls">
             <label for="min-price">ОТ</label>
-            <input name="min-price" class="min-price" type="text" value="0">
+            <input class="min-price" id="min-price" name="min-price" type="text" value="0">
             <label for="max-price">ДО</label>
-            <input name="max-price" class="max-price" type="text" value="15000">
+            <input class="max-price" id="max-price" name="max-price" type="text" value="15000">
           </div>
         </fieldset>
         <fieldset class="grid-filter">
@@ -196,7 +196,7 @@
         </label>
         <input class="email-field" id="user-email" type="email" name="user-email" placeholder="Для отправки ответа" required>
       </div>
-      <p>Текст письма:</p>
+      <label for="user-comment">Текст письма:</label>
       <textarea class="comment-field" id="user-comment" name="comment" rows="10" cols="60">В свободной форме</textarea>
       <button type="submit" value="Отправить">Отправить</button>
     </form>
