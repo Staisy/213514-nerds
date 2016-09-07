@@ -109,19 +109,18 @@ body {
   background-position: -25px -265px;
   opacity: 0.3;
 }
-.cart .btn:active::before {
-  background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -25px -265px;
-  opacity: 0.15;
-}
 .cart .btn:hover::before {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -25px -330px;
   opacity: 1.0;
 }
+.cart .btn:active::before {
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -25px -265px;
+  opacity: 0.15;
+}
 .promo {
   min-width: 880px;
-  /*min-height: 320px;*/
   padding-top: 0;
   background: #eeeeee;
   text-transform: none;
@@ -453,10 +452,6 @@ main {
   width: 700px;
   margin: 0 auto 80px;
   padding: 5px;
-  /*margin-left: 355px;*/
-  /*padding-left: 108px;
-  padding-right: 125px;
-  padding-bottom: 52px;*/
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
@@ -748,8 +743,21 @@ main {
   letter-spacing: -2px;
   color: #ffffff;
 }
+.items .active {
+  position: relative;
+}
 .items .active:hover {
   background-color: #797979;
+}
+
+/*.items .active:active {}*/
+
+.items .item-block {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 200px;
+  height: 200px;
 }
 .paginator {
   min-width: 300px;
