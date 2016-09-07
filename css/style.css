@@ -18,7 +18,7 @@ body {
   padding: 0 10px;
 }
 .main-header {
-  min-height: 435px;
+  /*min-height: 300px;*/
   margin: 0;
   color: #000000;
   background-color: #eeeeee;
@@ -451,10 +451,11 @@ main {
 }
 .catalog-promo h1 {
   width: 656px;
-  margin: 0;
+  margin-top: 5px;
+  margin-left: 355px;
   padding-left: 108px;
   padding-right: 125px;
-  padding-bottom: 85px;
+  padding-bottom: 57px;
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
