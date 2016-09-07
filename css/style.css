@@ -85,7 +85,7 @@ body {
   position: relative;
   vertical-align: top;
   display: inline-block;
-  padding-top: 53px;
+  padding-top: 54px;
   padding-left: 44px;
   font-size: 14px;
   line-height: 30px;
@@ -190,7 +190,7 @@ body {
 }
 .slide:nth-child(1) {
   background-image: url("../img/slide1.png");
-  background-position: 545px 10px;
+  background-position: 543px 10px;
 }
 .slide:nth-child(2) {
   background-image: url("../img/slide2.png");
@@ -436,7 +436,7 @@ main {
   opacity: 1.0;
 }
 .members img:active {
-  background: #333333
+  opacity: 1.0;
 }
 
 /*внутренняя страница*/
@@ -644,6 +644,13 @@ main {
   border-radius: 3px;
   border: none;
 }
+.catalog-filters .btn:hover {
+  background-color: #d5d5d5;
+}
+.catalog-filters .btn:active {
+  background-color: #d5d5d5;
+  box-shadow: 0 -2px 0 0 #b5b5b5;
+}
 .catalog-items {
   float: right;
   width: 560px;
@@ -751,20 +758,21 @@ main {
 .items .active:hover {
   background-color: #797979;
 }
+.item:hover .item-block {
+  opacity: 1;
+  transition: opacity .5s easy-out;
+}
 .active .item-block {
-  display: none;
   position: absolute;
   left: 20px;
   bottom: 20px;
-  width: 200px;
-  height: 200px;
-  margin: 0;
+  width: 140px;
+  height: 30px;
+  text-align: center;
   background: #ffffff;
+  opacity: 0;
 }
 .active .item-name {
-  margin: 35px auto 12px;
-  /*margin: 0;*/
-  padding: 65px 65px 12px 65px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
@@ -772,22 +780,18 @@ main {
   text-decoration: none;
 }
 .active p {
-  /*width: 140px;*/
-  margin: 0;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 14px;
+  overflow: hidden;
   line-height: 18px;
   color: #b1b3b4;
   text-transform: none;
 }
 .active .btn {
-  display: block;
+  display: inline-block;
   width: 140px;
-  margin-top: 38px;
-  margin-right: 24px;
-  margin-bottom: 29px;
-  margin-left: 32px;
   padding: 10px 0 8px 0;
   font-weight: 300;
   font-size: 18px;
