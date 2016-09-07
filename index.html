@@ -24,13 +24,13 @@
         </a>
         <ul>
           <li>
-            <a href="#">Cтудия</a>
+            <a class="active" href="#">Cтудия</a>
           </li>
           <li>
             <a href="#">Клиенты</a>
           </li>
           <li>
-            <a href="../213514-nerds/catalog.html">Магазин</a>
+            <a href="inner-page.html">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -42,9 +42,6 @@
         <a class="btn" href="#">Корзина</a>
       </div>
     </div>
-  </header>
-  <main class="container">
-
     <section class="promo clearfix">
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
@@ -90,6 +87,8 @@
         </div>
       </div>
     </section>
+  </header>
+  <main class="container">
 
     <section class="features clearfix">
       <div class="features-item">
@@ -103,7 +102,7 @@
         <img src="img/features-applications.jpg" width="240" height="124" alt="приложения">
         <h2>Приложения</h2>
         <p>Покорите топ-10 приложений
-          <br> в AppStore Google и Play</p>
+          <br> в AppStore и Google Play</p>
         <a class="btn" href="#">Заказать</a>
       </div>
       <div class="features-item">
@@ -117,7 +116,7 @@
     <section class="content clearfix">
       <div class="content-left">
         <div class="content-text">
-          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p><b>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
         </div>
 
@@ -165,9 +164,9 @@
 
         <div class="footer-contacts">
           <h2>Nёrds design studio</h2>
-          <p>191186 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">Как нас найти?</a>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <span>тел. +7 (812) 275-75-75</span>
+          <a class="btn" href="#">Напишите нам</a>
         </div>
         <div class="footer-marker">
           <img src="img/footer-map-marker.png" width="231" height="190" alt="маркер">
@@ -184,6 +183,28 @@
     </div>
 
   </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть
+    </button>
+    <form class="letter-form" action="#" method="post">
+      <div class="name-field">
+        <label class="name-field" for="user-name">
+          Ваше имя:
+        </label>
+        <input class="name-field" id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="email-field">
+        <label class="email-field" for="user-email">
+          Ваш e-mail:
+        </label>
+        <input class="email-field" id="user-email" type="email" name="user-email" placeholder="Для отправки ответа" required>
+      </div>
+      <p>Текст письма:</p>
+      <textarea class="comment-field" id="user-comment" name="comment" rows="10" cols="60">В свободной форме</textarea>
+      <button type="submit" value="Отправить">Отправить</button>
+    </form>
+
+  </div>
 </body>
 
 </html>
